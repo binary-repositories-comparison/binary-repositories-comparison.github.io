@@ -1,0 +1,1114 @@
+=  Binary Repository Manager Feature Matrix 
+
+[frame="all"]
+|===
+|Feature |Archiva |Artifactory | Nexus
+
+|*Screenshots*
+|image:archiva0.png[Archiva0, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/archiva0.png?raw=true"] +
+ +
+image:archiva1.png[Archiva1, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory1.png?raw=true"] 
+ 
+|image:artifactory0.png[Artifactory0, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory0.png?raw=true"] +
+ +
+image:artifactory1.png[Artifactory1, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory1.png?raw=true"]
+
+|image:nexus0.png[Nexus0, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus0.png?raw=true"] +
+ +
+image:nexus1.png[Nexus0, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus1.png?raw=true"]
+
+
+|*Latest Version*
+|2.0.1
+|3.6
+|2.11.2
+
+|*Release History*
+|http://archiva.apache.org/docs/current/release-notes.html[Release History]
+|https://bintray.com/jfrog/artifactory/artifactory/view[New Releases History (Bintray)] +
+ +
+http://sourceforge.net/project/showfiles.php?group_id=175347&package_id=201243[Early Releases History (SourceForge)]
+|http://links.sonatype.com/products/nexus/pro/release-notes[Release History]
+
+|*License History*
+|All versions: Apache License 2.0
+|Lesser GNU General Public License 3.0 
+|Eclipse Public License Version 1.0 
+
+|*Public Instances*
+a| - https://archiva-repository.apache.org/archiva/index.html?request_lang=en[Archiva Instance at Apache] 
+ 
+a|
+ - https://oss.jfrog.org/webapp/home.html[oss.jfrog.org ] (https://www.jfrog.com/confluence/pages/viewpage.action?pageId=26083425[free accounts for OSS projects]) +
+  - http://repo.springsource.org/[SpringSource] +
+  - http://repo.jenkins-ci.org/[Jenkins CI] + 
+  - http://repo.grails.org/[Grails] + 
+  - http://gradle.artifactoryonline.com/[Gradle] + 
+  - http://repo.typesafe.com/[Typesafe] + 
+  - http://repository.cloudera.com/cloudera/webapp/home.html[Cloudera] + 
+  - http://jaspersoft.artifactoryonline.com/jaspersoft/[JasperSoft] +
+  - http://repo.jfrog.org/artifactory/webapp/home.html[Repo@JFrog]
+  
+ a| - http://maven.alfresco.com/nexus[Alfresco] + 
+  - http://repository.apache.org/[Apache] + 
+  - http://maven.atlassian.com/[Atlassian] + 
+  - http://nexus.codehaus.org/[Codehaus] +
+  - http://repository.exoplatform.org/[ExoPlatform] + 
+  - http://maven.glassfish.org/[Glassfish] + 
+  - http://nexus.openqa.org/index.html[Open QA] + 
+  - http://nexus.scala-tools.org/index.html[Scala-Tools] +
+  - http://repository.sonatype.org/[Sonatype Forge] + 
+  - http://osgi.sonatype.org/[Sonatype OSGi Central] +
+  - http://oss.sonatype.org/[Sonatype OSS Hosting]
+   
+   4+|*Deployment*
+
+   
+   |Standalone
+   
+   |&#10004; + 
+   Embedded Jetty. JSW launch scripts - runs as a service on windows and unix
+   
+   |&#10004; + 
+   Bundled Tomcat - runs as a service on Windows and Unix. Complete script for installation as a service on unix, includes: user creation, permission settings and service config. 
+Complete script for installing a standalone Tomcat service on Unix.
+
+   |&#10004; + 
+   Embedded Jetty. JSW launch scripts - runs as a service on windows and unix. Also Native Solaris Service Manager Scripts.
+   
+   |War
+   
+   |&#10004; 
+   
+   |&#10004; +
+   "Drop the War" - deploy into any servlet container with zero configuration.
+
+   |&#10004; +
+   no container configuration required to run the war.
+
+|OS packages
+
+|*?*
+
+|RPM for installing on YUM-enabled OSes. More packaging systems coming.	
+
+|*?*
+
+|Cloud-based SaaS
+
+|&#10008;
+
+|&#10004; +
+http://www.jfrog.com/home/v_artifactorycloud_overview[Artifactory Online] - private Artifactory instance in the cloud with full self service, pay-per-use model and always up-to-date with all the latest features
+
+|&#10008;
+   
+4+|*Artifacts and Metadata Storage*
+
+|Artifacts storage	
+
+|Filesystem	
+
+a| - Filesystem +
+ - Database (not reccomeneded for large repositories), +
+ - Cached NFS, +
+ - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise)
+
+|Filesystem
+
+|Metadata storage
+
+|Filesystem	
+
+|Indexed and querible database	
+
+|Filesystem
+
+4+|*Configuration*
+
+
+|UI configurable
+
+|&#10004; +
+Partially
+
+|&#10004; + 
+Fully configurable via Ajax UI with extensive online help, or REST API
+
+|&#10004; +
+100% configuration with Ajax UI or REST API
+
+|Config Storage
+
+|XML
+|Database, with XML import/export
+|h2 embedded database, XML and other files
+
+4+|*Extensibility/ + 
+Orthogonality*
+
+
+|IOC
+|Spring
+|Spring
+|Google Guice
+
+|REST API
+
+|&#10004; +
+Partially (with 1.4-M1)
+
+|&#10004; +
+Extensive coverage. Document-first design (not UI coupled, so changes in UI do not break existing REST clients). Uses Jersey. Can be used via strongly-typed Java API. Supports WADL.
+
+|&#10004; +
+Uses Restlet.org servlet. UI communicates with server via REST to ensure 100% api support
+
+|Deploy plug-ins without recompilation
+
+|&#10004;
+
+|&#10004; +
+Extensible with custom Groovy plugins - schedule tasks, deploy artifacts, change resolution rules and download content, tend to any storage events etc. 
+Plugin source files are redeployed on the fly during development and can be edited and debugged in your favorite IDE.
+
+|&#10004; +
+Fully extensible across the core components, REST API and UI. See the book and this post for more info.
+
+4+|*Proxying and Cache*
+
+
+|Hosted Repositories
+|&#10004;
+|&#10004;
+|&#10004;
+
+|Proxy Repositories
+|&#10004;
+|&#10004;
+|&#10004;
+
+|Aggregate Repositories into single logical repo
+|&#10004;
+|&#10004;
+|&#10004;
+
+|Nest and reuse Repository Groups
+|*?*
+|&#10004;
+|&#10004;
+
+|Groups can contain other groups
+|*?*
+|&#10004;
+|&#10004;
+
+|Inclusion/exclusion rules per remote proxy
+|&#10004;
+|&#10004;
+|&#10004;
+
+4+a|[cols="1,1,1,1", width="90%"]
+!==============================================
+4+!*Checksum checking* 
+!fix bad checksums!&#10004;!&#10004;!&#10004;
+!block bad checksums!&#10004;!&#10004;!&#10004;
+!ignore bad checksums!&#10004;!&#10004;!&#10004;
+!repair hosted checksums!&#10004;!&#10004;!&#10004;
+!calculate missing checksums!&#10004;!&#10004;!&#10004;
+!validate client-side checksums!*?*!&#10004;!&#10004;
+!on deploy!&#10008;!&#10004;!&#10008;
+!==============================================
+
+
+  |Maven Metadata.xml repair
+  
+  |&#10004;
+  
+  |&#10004; +
+  Not required. Artifactory's Maven metadata.xml is server calculated and is inherently up-to-date.
+
+  |&#10004;
+
+|Auto-cleanup of repositories declared in POMs
+|&#10008;
+|&#10004;
+|&#10008;
+
+|On the fly conversion of M1 to M2
+
+|&#10004; +
+with custom mappings for ambiguous paths
+|&#10004;
+|&#10004;
+
+|On the fly conversion of M2 to M1
+|&#10004;
+|&#10004;
+|&#10004;
+
+|Eager parallel download of related artifacts
+|&#10008;
+|&#10004; +
+Can download jars in parallel as soon as poms are requested, and sources in parallel when jars are requested.
+|&#10008;
+
+|Shared Remote Repository Definitions
+|&#10008;
+|&#10004; +
+Share remote repository definitions and import preconfigured definitions for most common remote repositories, save the configuration hassle.
+|&#10008;
+
+|Eclipse Update Site Proxying
+|&#10008;
+|&#10004; +
+Pro
+|&#10004;
+
+|Eclipse OSGI / P2 Proxying
+|&#10008;
+|&#10004; +
+Pro
+|&#10004;
+
+|OBR (OSGI Bundle Repository)
+|&#10008;
+|&#10008; 
+|&#10004;
+
+|Maven Site Hosting
+|&#10008;
+|&#10004; 
+|&#10004;
+
+|Built in Remote Repository Browsing (html)
+|&#10008;
+|&#10004; 
+|&#10004;
+
+|Built in Remote Repository Browsing (s3)
+|&#10008;
+|&#10004; 
+|&#10004;
+
+4+|*Indexing/ +
+Search*
+
+
+|Index Format
+|Lucene
+|Database metadata indexing 
+|Lucene
+
+|Global Search by any query	
+|&#10008;
+|&#10004; https://www.jfrog.com/confluence/display/RTF/Artifactory+Query+Language[Artifactory Query Language]
+|&#10008;
+
+|Identify unknown artifact via checksum
+|&#10004;
+|&#10004; 
+|&#10004;
+
+|On the fly indexing
+|&#10004;
+|&#10004; +
+Immediate and transactional
+|&#10004;
+
+|Scheduled Indexing
+|&#10004;
+|&#10004; + 
+Not needed - indexes are always up-to-date
+|&#10004; + 
+(Not needed in most cases, but manual reindex is available in case changes are made directly to storage external to the app)
+
+|Search in selected repositories
+|&#10004;
+|&#10004; 
+|&#10004;
+
+|Search for non-Maven artifacts	
+|*?*
+|&#10004; + 
+Indexes any file in any format	
+|&#10008; + 
+Relies on maven-indexer which only indexes artifacts in Maven format
+
+|Search for artifacts on Central index
+|&#10004; + 
+(1.4-M1)
+|&#10004; + 
+Uses immediate search in JCenter (superset of Central)
+|&#10004; 
+
+|Search for artifacts in Bintray JCenter	
+|&#10008;
+|&#10004; 
+|&#10008;
+
+|Index Publishing for External Consumption
+|&#10004;
+|&#10004; 
+|&#10004; + 
+Only version compliant with all IDEs
+
+|Group Index Publishing
+|&#10004; + 
+(1.4-M2)
+|&#10004;
+|&#10004; 
+
+|Download Index from Remote Repositories for Local searching and proxying to consumers
+|&#10004; + 
+(1.4-M1)
+|&#10004;
+|&#10004; + 
+Known Indexes publishing compatible Index: Central, Apache, Java.Net, more here
+
+|Incremental Index Downloads
+|&#10004; + 
+(1.4-M1)
+|Remote repositories only
+|&#10004;
+
+|Incremental Index Publishing
+|&#10004; + 
+(1.4-M1)
+|Remote repositories only
+|&#10004;
+
+|Class search
+|&#10004;
+|&#10004; +
+Includes search for any jar resource, and showing the actual class found
+|&#10004;
+
+|GAVC search
+|&#10004;
+|&#10004; 
+|&#10004;
+
+|POM/XML search	
+|&#10008;
+|&#10004; + 
+Includes XPath search of any XML metadata. 
+No need to customize anything for XML indexing
+|&#10008;
+
+|Ivy modules search	
+|&#10008;
+|&#10004; 
+|&#10008;
+
+|Properties search
+|&#10008;
+|&#10004; + 
+Search custom properties. Attach props to both files and folders via the UI (Pro) or via REST (OSS). No need for custom RDF uploads. Search results are can be manipulated as a bundle
+|&#10004; + 
+Custom metadata may be attached via the UI, Rest or by uploading an RDF file as part of your build. The metadata is indexed and searchable for files in Maven layout. (Pro)
+
+|Group Index Publishing
+|&#10004; + 
+(1.4-M2)
+|*?*
+|*?*
+
+4+|*Reports*
+
+
+|Report for Problem Artifacts
+|&#10004;
+|By default blocks bad poms in runtime instead of polluting your repository and reporting after the fact (policy is configurable via UI)
+|&#10004; + 
+RSS Feeds and UI viewer for bad checksums and artifacts with bad poms. 
+Bad poms are allowed through by default because many times Maven can still use them. We don't believe that simply inserting a repo manager should cause things to suddenly fail from Central. The repo man should for the most part be transparent by default
+
+|Repository Statistics
+|&#10004; + 
+Per repository or as a comparison among multiple repositories
+|&#10004; +  
+- Binaries Count +
+- Binaries Size +
+- Artifacts Size +
+- Optimization +
+- Items Count +
+- Artifacts Count
+|&#10008;
+
+|Artifact Statistics
+|*?*
+|&#10004; +  
+- Download count +
+- Last downloaded and by whom +
+- Deployed by +
+- Age
+|&#10004; + 
+- Last Modified +
+- Deployed by +
+- Age
+
+|RSS Feeds for New Artifacts
+|&#10004; + 
+SS feeds available both for new artifacts in the repository and for newly deployed/discovered versions of a specific artifact
+|&#10008;
+|&#10004; + 
+Feeds for: + 
+- Newly Proxied Artifacts +
+- Newly Deployed Artifacts +
+- System Configuration Changes + 
+- Checksum errors +
+- Authentication Events
+
+|Artifact Watching
+|&#10008; 
+|&#10004; +  
+Supports watching any repository path for add/remove/update and receiving email notifications (Pro)
+|&#10008; 
+
+|Audit Logs
+|&#10004; +
+currently viewable from text file only
+|&#10004; +  
+etailed audit logs for all actions and their sources in access.log
+|&#10004; 
+
+4+|*User Interface*
+
+
+|UI Technology
+|Ajax - Single Page Application - knockoutjs bootstrap
+|Ajax - uses Apache Wicket
+|ExtJs - Ajax
+
+|Repository Browsing
+|html and webdav
+|Ajax tree view, simple HTML view and WebDAV
+|Ext Tree View, html, REST:xml, REST:json
+
+|Viewing of Artifact Information
+|&#10004; + 
+POM information, dependencies, dependency tree and used by; artifact (including pom, sources, javadocs, etc.) can also be downloaded from artifact info page
+|&#10004; +  
+POM view, size, deployed by, age, last downloaded and by whom, times downloaded, dependency info, permissions, metadata and properties, virtual repositories association, actions, builds + build information
+|&#10004; 
+
+|Delete Artifacts
+|&#10004; 
+|&#10004;
+|&#10004; 
+
+|Move Artifacts
+|&#10004; + 
+ (via REST Api only)
+|&#10004; + 
+Move artifacts between repositories + dry-run to check for warnings + auto metadata recalculation. Also available via REST in Pro
+|&#10008; 
+
+|Copy Artifacts
+|&#10004; + 
+(1.4-M1) via REST api only
+|&#10004; + 
+Cheap-copy of artifacts between repositories + dry-run to check for warnings + auto metadata recalculation (no extra space used due to pointer-based storage). +  
+Copying is often the best approach for exposing the same artifact under different secure locations. Also available via REST in Pro
+|&#10008; 
+
+|Upload Artifacts
+|&#10004; + 
+With our without pom (will generate one if needed)
+|&#10004; + 
+- With our without pom (will generate one if needed) + 
+- Upload multiple artifacts in one go +
+- Edit the pom before deployment + 
+- Deploy to arbitrary (non-maven) paths via the UI
+|&#10004; + 
+With our without pom (will generate one if needed) 
+Upload multiple artifacts (classifiers) at once
+
+|Syntax Highlighting
+|&#10008; 
+|&#10004; + 
+Syntax highlighting + copy to clipboard support for dozens of known file types directly form the repository (including zip/jar sources)
+|&#10008; 
+
+|Jar Browsing
+|&#10004; 
+|&#10004; + 
+Supports viewing the content of jar files, including show source for class files
+|&#10004; +
+Via a plugin in Pro
+
+|Dynamic Resources
+|&#10008; 
+|&#10004; + 
+Serve dynamic repository content based on textual filtering (Pro)
+|&#10008; 
+
+|Mount Repositories as WebDAV Shares
+|*?* + 
+depoyment thru webdav
+|&#10004; + 
+Artifact deployment, browsing, moving, copying and deleting over WebDAV mounts, using native file explorers
+|&#10008; 
+
+|Configure deployed plug-ins
+|&#10004; + 
+proxy policies, artifact processors
+|&#10004; + 
+Extension points to UI, request processing, scheduling, storage events etc
+|&#10004; +
+Plugins can contribute REST, UI and components
+
+|UI Branding
+|&#10004;
+|&#10004; + 
+Upload or link your logo image + preview, add custom footer text
+|&#10004; +
+Branding with Logo is available (Pro)
+
+4+|*Repository Support*
+
+|Maven 2
+|&#10004; 
+|&#10004;
+|&#10004;
+
+|Maven 1
+|&#10004; 
+|&#10004;
+|&#10004;
+
+|Ivy
+|&#10004; +
+Only with Maven layout
+|&#10004; +
+Maven and non-maven layouts
+|&#10004; +
+Only with Maven layout
+
+|Gradle
+|&#10004; +
+Only with Maven layout
+|&#10004; +
+Maven and non-maven layouts
+|&#10004; +
+Only with Maven layout
+
+|NuGet
+|&#10008; 
+|&#10004; +
+(Pro)
+|&#10004; +
+(OSS) searching and custom metadata aren't supported
+
+|Yum
+|&#10008; 
+|&#10004; +
+(Pro)
+|&#10004; +
+(OSS) 
+
+|P2
+|&#10008; 
+|&#10004; +
+(Pro) + 
+Reuses native remote repositories for effective caching and expiry management
+|&#10004; +
+(OSS) +
+Uses a separate mirroring mechanism where underlying list of repositories isn't under user control
+
+|npm
+|&#10008; 
+|&#10004; +
+(Pro)
+|&#10004; +
+(OSS) browsing, searching and custom metadata aren't supported
+
+|RubyGems
+|&#10008; 
+|&#10004; +
+(Pro)
+|&#10004; +
+(OSS) browsing, searching and custom metadata aren't supported
+
+|Debian packages
+|&#10008; 
+|&#10004; +
+(Pro)
+|&#10008;
+
+|Python Eggs
+|&#10008; 
+|&#10004; +
+(Pro)
+|&#10008;
+
+|Docker
+|&#10008; 
+|&#10004; +
+(Pro)
+|&#10008;
+
+|VCS
+|&#10008; 
+|&#10004; +
+(Pro) +
+Allows using Version Control Systems as a remote repository for any type of file
+|&#10008;
+
+|Custom Layouts
+|&#10008; 
+|&#10004; +
+Supports any custom layout with the ability to "understand" per layout what is a module. Defaults layouts can be extended in Pro
+|&#10008;
+
+|Repository Storage
+|File System
+|Database (configurable) or file system + full system import/export and automated backups
+|File System - Uses Maven repo layout on disk meaning no import or export required to get access to your artifacts
+
+|Repository Replication/Syncing
+|&#10008; 
+|&#10004; +
+Supports repository or folder-level replication via rsync-like REST API, including support for syncing deletes and controlling overwrites. Supports scheduled or event-driven push mode and pull mode (in Pro). + 
+Supports multi-site pull replication (collecting from multiple remotes) (in Pro) and multi-site push replication (event-driven or scheduled pushing of artifacts to multiple remotes) (in Enterprise)
+|&#10004; + 
+Smart Proxy enables cache invalidation and pre-emptive fetching between Nexus instances (Pro)
+
+|Store same binary only once
+|&#10008; 
+|&#10004; +
+Artifacts with the same hash are stored a single time, no matter in how many repositories it appears in
+|&#10008; 
+
+|Highly Available Active-Active cluster
+|&#10008; 
+|&#10004; +
+(Pro) + 
+Enterprise-level HA cluster support for zero-downtime deployments and unlimited scalability.
+|&#10008; 
+
+|Deploy Artifacts via UI
+|&#10004; 
+|&#10004; +
+Includes snapshots and ability to auto-generate POMs and tweak POMs in the UI before deployment
+|&#10004; +
+can auto-generate poms.Accepts multiple files in one operation to accept classified/attached artifacts
+
+|Deploy Artifact Bundles (multiple artifacts in one go)
+|in future plans 
+|&#10004; 
+|&#10004;
+
+|Import local repositories
+|&#10004;
+|&#10004; 
+|&#10004;
+
+|Import repositories and separate RELEASE and SNAPSHOT artifacts
+|*?*
+|&#10004; 
+|&#10004;
+
+|Centrally controlled snapshot policy
+|*?*
+|&#10004; + 
+Can choose between unique, non-unique (to save space and artifacts clutter) or respect deployer's settings
+|&#10008; + 
+Respect deployer's settings (from the pom)
+
+4+|*Artifacts Metadata*
+
+|Persistent metadata about artifacts
+|&#10004; +
+(1.4-M1)
+|&#10004; +
+Download stats (when by whom), original deployer, age
+|&#10004;
+
+|User attached custom metadata
+|&#10004;
+|&#10004; +
+On both files or folders - no need to customize anything
+|&#10004;
+
+|Searchable custom metadata
+|&#10008;
+|&#10004; +
+Including unique moving, copying & exporting of search results
+|&#10004;
+
+|Strongly-typed user-defined Properties
+|&#10008;
+|&#10004; +
+Tag files and folders with you user defined searchable properties via the UI. +
+Prop-sets defined through UI as single/multi select or open, with the ability to assign default values, and associated with selected repos (Pro)
+|&#10004; +
+Custom metadata plugin
+
+|Attach metadata as part of deployment
+|&#10008;
+|&#10004; +
+Attach metadata during Maven deployment or via simple REST - uploading external documents not required
+|&#10004; +
+Full RDF metadata support
+
+|Schema-less properties
+|&#10008;
+|&#10004; +
+Any property of any type can be added on-the-fly without any pre-configuration
+|&#10008;
+
+|Proxy remote metadata
+|&#10008;
+|&#10004; +
+Metadata for remote artifacts on another Artifactory is synced and proxied
+|&#10008;
+
+|User-defined metadata on non-maven layout artifacts
+|&#10008;
+|&#10004; +
+Since Artifactory is not maven-layout centric, metadata can be attached and queried on artifact in any layout
+|&#10008;
+
+4+|*Security*
+
+|Framework
+|Redback (database required)
+|http://static.springframework.org/spring-security/site/index.html[Spring Security]
+|http://incubator.apache.org/shiro/[Apache Shiro]
+
+|Role Based
+|&#10004;
+|&#10004; 
+|&#10004;
+
+|Default Roles
+|*?*
+|&#10004; +
+Supports auto-join roles for newly created users, including ones from external realms
+|&#10004; + 
+Users inherit default roles when they sign up
+
+|Permissions per repository
+|&#10004;
+|&#10004; 
+|&#10004;
+
+|Permissions per subset of repository or individual artifact
+|in future plans
+|&#10004; 
+|&#10004;
+
+|Administrators per subset of repository
+|*?*
+|&#10004; 
+|&#10004;
+
+|Allow external security
+|&#10008;
+|&#10004; + 
+via http://static.springframework.org/spring-security/site/index.html[Spring Security]
+|&#10004; +
+via Shiro realm
+
+|Allow external authentication
+|&#10004;
+|&#10004; + 
+via Spring security or via pluggable realms written in Groovy
+|&#10004; +
+via Shiro
+
+|Built-in enterprise user management features
+|&#10004;
+|&#10004; + 
+via intuitive Ajax console
+|&#10004; +
+via Shiro + ExtJs user console. Full role based with the ability to specify permissions based on the path of the artifact (group/artifact/version) using regex if desired
+
+|Support Prevention of Redeploy
+|&#10004;
+|&#10004; 
+|&#10004;
+
+|Control over who can populate caches
+|*?*
+|&#10004; 
+|&#10004; + 
+Fully featured procurement support included in the pro version. This allows absolute control over the artifacts allowed through based on the artifact and user
+
+|Support Protection of Sources / + 
+javadoc etc
+|*?*
+|&#10004; + 
+Using Ant-like simple to understand patterns + OOTB templates for common include/excludes. Supports inclusion and exclusion so no need to used negative patterns for protecting sources etc
+|&#10004; + 
+Using the regex to control the paths, it is possible to secure separately any artifacts you want. Comes configured with targets to specify sources, which would allow you for example to have jars be downloaded anonymously but not the sources, even though they are sitting in the same repository
+
+|Out of the box LDAP support
+|*?* + 
+partially for authz
+|&#10004; + 
+Configurable via the web UI
+|&#10004; + 
+Including role mappings, Active Directory support and more
+
+|Able to use LDAP groups (authorization from ldap)
+|*?* 
+|&#10004; + 
+Including highly optimized caching and comprehensive UI integration in Pro
+|&#10004; + 
+(Open Sourced in 1.5+)
+
+|Supports multiple realms in order (ie LDAP then fallback to internal)
+|*?* 
+|&#10004; + 
+With control of whether to fallback to internal users or not. +
+Including Kerberos and native NTLM in Pro
+|&#10004; + 
+ordered control of cascading though configured realms -- as many as you have installed
+
+|Atlassian Crowd integration
+|&#10008; 
+|&#10004; + 
+Delegate authentication requests to your Crowd server, get transparent SSO in a Crowd-enabled SSO environment, sync and manage permissions for Crowd groups in Pro
+|&#10004; +
+Security integration with Atlassian Crowd provided by Pro plugin
+
+|SAML integration	
+|&#10008; 
+|&#10004; + 
+SSO with any SAML IdP (Identity Provider). Artifactory can act as a SAML Service Provider
+|&#10008;
+
+|Secured settings.xml passwords
+|&#10008; + 
+functionality already available in Maven 2.1.0
+|&#10004; + 
+Centrally-controlled encrypted password policy so admins do not have to rely on clients security policy. Auto-generated encrypted passwords can be used in your settings.xml or with non Maven REST clients, such as Ivy, Gradle etc. +
+Overcomes Maven drawbacks (including Maven 2.1+) - Maven decrypts the password to clear-text on the client, and keeps a clear-text master password on the filesystem
+|&#10004; + 
+Via the http://blog.sonatype.com/2012/08/securing-repository-credentials-with-nexus-pro-user-tokens[User Token] feature. The token is a random api key and is not reversible to your corporate password, even by Nexus administrators. This was co-developed with a stock market that needed higher security than was is available elsewhere
+
+|Configuration files protection
+|&#10008; 
+|&#10004; + 
+Full encryption of passwords in configuration files
+|&#10008;
+
+4+|*Client features*
+
+|Client settings generation (settings.xml etc.)	
+|&#10008; 
+|&#10004; + 
+Out of the box generation of downloadable from the UI Maven's settings.xml, Ivy's settings.xml and Gradle's initial build script
+|&#10004; + 
+with template management
+
+|Client settings provisioning
+|&#10008; 
+|&#10004; + 
+Maven, Ivy and Gradle settings files can be templatized and provisioned via Artifactory (using standard FreeMarker templates)
+|&#10004; + 
+Maven settings can be templatized and provisioned using Nexus Maven plugin (Pro)
+
+|Dedicated client plugins
+|&#10008; 
+|&#10004; + 
+All client plugins allow generation of build BOM on any CI server (inc. cloud-based and non-pluggable ones) or without using a CI server. Existing plugins: +
+ + 
+- Artifactory Gradle Plugin (with custom DSL) +
+- Artifactory Maven Plugin +
+- Artifactory MsBuild Plugin (works with and without NuGet dependency management)
+|&#10004; + 
+Nexus Maven Plugin
+
+4+|*CI Integration*
+
+|Multiple CI servers support
+|&#10008; 
+|&#10004; + 
+Supports Jenkins/Hudson, TeamCity and Bamboo with full UI integration and any other CI server (inc. cloud-based and non-pluggable ones) by using Maven/Gradle plugins. + 
+Supports Microsoft Team Foundation Server (TFS) for working with .NET builds with and without NuGet
+|&#10008;
+
+|Trace build environment
+|&#10008;
+|&#10004; + 
+Captures all build environment vars and system properties + CI-server specific vars (build, parent build, agent details etc.)
+|&#10008;
+
+|Trace published build artifacts and dependencies
+|&#10008; 
+|&#10004; + 
+Captures all published artifacts and effective build dependencies (after final version resolution) from all scopes (including plug-ins) + visual view of per-module artifacts & dependencies in Pro
+|&#10008;
+
+|Bi-directional links from/to CI sevrer
+|&#10008; 
+|&#10004; + 
+Can link from any build to its captured build info in Artifactory and from any artifact to the builds it is associated with in the CI server
+|&#10008;
+
+|CI-Build Promotion
+|&#10008; 
+|&#10004; + 
+Can promote CI builds to target repositories with selective scopes (e.g. promote all artifacts and all compile-time dependencies). Also via REST (Pro)
+|&#10008;
+
+|Optimized Deployment
+|&#10008; 
+|&#10004; + 
+Deploys all artifacts in one go only at the end of a successful build (Maven deploys partial modules for a broken multi-module build)
+|&#10004; + 
+Custom deploy plugin works with Staging to stage locally and deploy/promote at the end of the build
+
+4+|*Database*
+
+|Supported DBMS
+a|- Apache Derby (default) +
+- MySQL + 
+- PostgreSQL
+a|- Bundled with Apache Derby +
+- MySQL + 
+- PostgreSQL + 
+- Oracle + 
+- MS SQL Server
+|Bundled with H2 and non-replaceable
+
+|Database available for querying
+|&#10004; + 
+configurable by datasources. Lucene index and REST api provided for searching
+|&#10004; + 
+Can be queried, but can also use REST API
+|n/a - Lucene index and REST api provided for searching
+
+|Can run without database
+|&#10004; + 
+Use by default an embedded Derby DB
+|&#10004; + 
+Can use file-system storage. Database usage is recommended for fully transactional behavior of metadata not extractable from the artifact file itself
+|&#10004; + 
+Uses H2 for metadata, not for artifacts
+
+|*Documentation*
+a|- available docs: http://archiva.apache.org/[site], http://cwiki.apache.org/confluence/display/ARCHIVA/[wiki] + 
+- live instances: http://vmbuild.apache.org/vmbuild/[vmbuild], http://maven.atlassian.com/[Atlassian], http://archiva.exist.com/[Exist] (includes searchable Central repository)
+a|-  available doc: http://www.jfrog.com/[site], http://www.jfrog.com/confluence/pages/viewpage.action?pageId=25067914[wiki], http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide[User Guide] + 
+Live browsable and searchable http://repo.jfrog.org/artifactory/webapp/home.html[demo]
+a|-  available docs: http://nexus.sonatype.org/[site], http://www.sonatype.com/book/reference/repository-manager.html[Online Book] and http://www.sonatype.com/book/pdf/maven-definitive-guide.pdf[Printed Book] +  
+- live http://repository.sonatype.org/[instance] that includes searchable Central repository + 
+- http://www.sonatype.com/nexus/compare-repos[feature matrix]
+
+4+|*Repository Purge*
+
+|Snapshot Purge
+|&#10004; + 
+configurable by: retention count, # of days old and if released snapshots are to be deleted
+|&#10004; + 
+configurable by retention count
+|&#10004; + 
+configurable by: retention count, # of days old and if released snapshots are to be deleted
+
+|Unused Proxy artifact purge
+|&#10008; 
+|&#10004; + 
+Can evict unused artifacts from the proxy cache to conserve disk space
+|&#10004; + 
+Can evict unused artifacts from the proxy cache to conserve disk space
+
+|Bulk Removal of Old Module Versions
+|&#10008; 
+|&#10004; + 
+Select multiple artifacts across directories, by version and clean them all up in one go, or select any section of the repository tree to delete
+|&#10004; + 
+You can select any section of the repository tree to delete, just like you would do on a file system
+
+|*Web Services*
+|&#10004; +
+XMLRPC support in 1.2 +
+&#10004; +
+(REST in 1.4-M1)
+|&#10004; +
+http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API[REST API]
+|&#10004; + 
+- full support: The Ajax communicates with the server via REST so all operations are available for Web service integration
+
+|*Plugins Available*
+|Pluggable repository consumers (ex. indexing consumer, repository purge consumer)
+a|- http://www.jfrog.com/confluence/display/RTF/Build+Integration[Build Integration] -  Use the http://wiki.hudson-ci.org/display/HUDSON/Artifactory+Plugin[Hudson Artifactory Plugin], http://www.jfrog.com/confluence/display/RTF/TeamCity+Artifactory+Plug-in[TeamCity Plugin] or http://www.jfrog.com/confluence/display/RTF/Bamboo+Artifactory+Plug-in[Bamboo Plugin] to deploy builds to Artifactory from Hudson/TeamCity together with build-time information. View builds in Artifactory with information about the deployed artifacts and dependencies (all scopes) and runtime environment per build, and link back to the CI Server to obtain fully-reproducible builds (some functions only in Pro).  
+- http://www.jfrog.com/confluence/display/RTF/Artifactory+High+Availability[High Availability] (Enterprise) - Full active-active cluster with live fail-over. 
+- https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[S3 and Compatible Object Storage] (Enterprise) - Binary filestore can reside on the cloud providing unlimited scalability, security and disaster recovery capabilities. The solution uses read and write-behind caches for brining the performance to a filesystem level. 
+  
+  
+- http://www.jfrog.com/confluence/display/RTF/License+Control[License Control] (Pro) - Take full control over licenses used by third-party dependencies as part of your builds and/or any file. Receive immediate notifications about any libraries that violate your organization's license policy, so you can deal with licensing issues early on during development. 
+  
+ - The information about licenses may be harvested from pom and ivy descriptors or from http://www.jfrog.com/confluence/display/RTF/Black+Duck+Code+Center+Integration[Black Duck Code Center]. 
+  
+  - http://www.jfrog.com/confluence/display/RTF/Repository+Replication[Replication] (Pro) - Eagerly synchronize you repository content and metadata +
+ - https://www.jfrog.com/confluence/display/RTF/Repository+Replication[Multi-push replication] (Enterprise) - simultaneously push-replicate from one source repository to multiple target repositories in Enterprise installations 
+  
+  - http://www.jfrog.com/home/v_artifactorypro_features#search[Smart Searches and Promotion] (Pro) to aggregate multiple search results and operate them in one go. 
+   
+   - http://www.jfrog.com/home/v_artifactorypro_features#properties[Properties] (Pro) - Define custom searchable property sets and apply them to artifacts and folders. 
+    
+    - http://www.jfrog.com/confluence/display/RTF/P2+Repositories[P2] (Pro) - Proxy and host all your Eclipse® plugins via an Artifactory P2 repository, allowing users to have a single-access-point for all Eclipse® updates. 
+     
+     - http://www.jfrog.com/confluence/display/RTF/YUM+Repositories[Yum] (Pro) - Host and proxy RPMs directly in Artifactory, acting as fully-featured YUM repository with auto-updating repo metadata. 
+     
+     - http://www.jfrog.com/confluence/display/RTF/NuGet+Repositories[Nuget] (Pro) - Host and proxy NuGet packages in Artifactory and pull libraries from Artifactory into your various Visual Studio .NET applications. 
+- http://www.jfrog.com/confluence/display/RTF/RubyGems+Repository[Ruby Gems] (Pro) - Host and proxy Ruby Gems in Artifactory with full gem bundler and rake support 
+- http://www.jfrog.com/confluence/display/RTF/Npm+Repositories[NPM] (Pro) - Host and proxy node.js npm packages in Artifactory with npm tools support 
+- http://www.jfrog.com/confluence/display/RTF/PyPI+Repositories[Python Eggs] (Pro) - Host and proxy Python Eggs in Artifactory with pypi support 
+- http://www.jfrog.com/confluence/display/RTF/Debian+Repositories[Debian] (Pro) - Distribute deb files directly from your Artifactory server, acting as fully-featured Debian repository with auto-updating repo metadata.  
+- http://www.jfrog.com/confluence/display/RTF/Docker+Repositories[Docker] (Pro) - Use Artifactory to manage your in-house Docker containers. Distribute and share your containers among teams across your organization, whether on-site or at remote locations with docker tool support, including secure pull and search. 
+- https://www.jfrog.com/confluence/display/RTF/Bower+Repositories[Bower] (Pro) - Provision Bower packages directly from Artifactory to the Bower command line tool. Enjoy reliable and consistent access to remote Bower packages, and automatic calculation of metadata for Bower packages stored in our local repositories. Access multiple Bower registries through a single URL. 
+- https://www.jfrog.com/confluence/display/RTF/VCS+Repositories[VCS Repositories] (Pro) - Proxy a plain version control system as remote repository in Artifactory. 
+- http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API[Advanced REST] (Pro) - Bundles a set of power REST commands, such as: Build Promotion, repository replication, aggregated folder tree file-listing, move/copy, sophisticated range searches, etc. 
+ 
+ - http://www.jfrog.com/confluence/display/RTF/Filtered+Resources[Filtered Resources] - Server dynamic textual resources based on item properties and request context 
+ 
+ - http://www.jfrog.com/home/v_artifactorypro_features#layouts[Custom (Non-Maven) Layouts] (Pro) - Define the layout by which modules are identified for automatic version management, cleanup and cross-repository layout conversion 
+ 
+ - http://www.jfrog.com/confluence/display/RTF/LDAP+Groups[LDAP Groups] (Pro) leverage your existing organizational LDAP structure for managing group-based permissions with super-fast caching and flexible mapping strategies. 
+
+ - http://www.jfrog.com/confluence/display/RTF/Atlassian+Crowd+Integration[Atlassian Crowd Integration] (Pro) - Delegate authentication requests to your Crowd server, get transparent SSO in a Crowd-enabled SSO environment, sync and manage permissions for Crowd groups. 
+ 
+ - http://www.jfrog.com/home/v_artifactorypro_features#watches[Watches] (Pro) - Watch any repository path and receive focused email notifications. 
+ 
+ - http://www.jfrog.com/home/v_artifactorypro_features#sso[Pluggable HTTP SSO] (Pro) - Reuse exiting SSO infrastructures, such as Apache mod_ntlm, mod_kerberos, etc. 
+ 
+ - http://www.jfrog.com/home/v_artifactorypro_features#webstart[Web Start/Jar Signing] (Pro) to sign jars upon request and deploy, host and serve dynamic modular Web Start applications. 
+ 
+ - Pluggable security realms
+|http://books.sonatype.com/nexus-book/reference/community.html[Full list here]
+
+4+|*Commercial Support*
+
+|Cost + 
+[small]#Each CI server agent and build tool considered a "user"#
+|&#10008;
+|&#10004; + 
+US$2,750 per server for unlimited users on unlimited hardware with https://www.jfrog.com/registration/quoteaddons.html[Artifactory Pro]
+|&#10004; + 
+- US$1,200 for 10 users included with Nexus Pro +
+ +
+- US$6,000 for 50 users included with Nexus Pro +
+ +
+- US$10,200 for 100 users included with Nexus Pro +
+ +
+All with unlimited servers.
+
+|Trial period for commercial versions
+|
+|30 days. Extensions available on request
+|14 days automatically. Extensions available on request
+
+|Support terms and SLA
+|&#10008;
+|24/7 with 4 hours acknowledgement time
+|24/7 available
+
+|===
+
+
