@@ -1,0 +1,21 @@
+branches:
+  only:
+  - master
+language: java
+jdk:
+- oraclejdk8
+before_install:
+- git config user.name "$GIT_NAME"
+- git config user.email "$GIT_EMAIL"
+- git config --global push.default simple
+- git config credential.helper "store --file=.git/credentials"
+- echo "https://$GH_TOKEN:@github.com" > .git/credentials
+script: ./gradlew clean asciidoctor
+after_success:
+- ./push.sh
+notifications:
+  email:
+  - elig@jfrog.com
+env:
+  global:
+    secure: G+58yPhdW52KLNXEeJw44bDhelWblImDi8a164BrD5qCha4yYOCNLti2u/2Jj+2Js2AtEN/ganenK6laxaH8PRvHPVF1RyDG1nPeFgeT52/LePuY/Dlj3LNF23kntazDFhsq84nWdvnab/U2zUc0iOTO9zMdj/AABEMaVL2syx8pHZLiA5bsmMy0rOtIjnDx7izx8kzmZQscV0ptml+fKMk5QDMhWdEVcPo3QItryP0s96s+PwYUQb1wjdO2z+rTFK53ZytV03vnsrMgDP5ooWbLRAztgsDVlmARzFLXEaOqLgzPgojDpHYIL5nXb+mBtzVG2pzzwC7mqmh9OHjedNxAFoWsljIpOC5P8J3jy0ubBao86XvSk6Z36Ia4UoyGYA2/vfQYCV0CMJc1/ItTOUuIBstHxHAu9hmJwAM+9XxYMIEY5Wk0xT5QKAXR8wCjl4hDkHhhWFCmKuz9cYLC1bcOvtu+miKAyKXlhQ/FPp0qSPAMAdFnoiaI7l5Zu0KNMSpc0Kbs4aGbFo8/gzeF1vUUYG013EXkBUOncWbK9GYFlwQWaNbBgZpVsW3+0g1bizmaGP0a+Ps2L25Q1eXdQPzVtmqx98HGaG4vzgKEyAx3/g+RWqTUXdlOmpdAl4bpDLPQjqmNwG3mQGx3E772VPDapk7tztHalY5aTyzrWj0=

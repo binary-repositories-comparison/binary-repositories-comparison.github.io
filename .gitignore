@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+out/
+bin/
+intellij/
+build/
+*.iml
+*.ipr
+*.iws
+.gradle/

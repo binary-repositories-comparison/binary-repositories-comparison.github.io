@@ -1,0 +1,43 @@
+plugins {
+    id 'org.asciidoctor.convert' version '1.5.2'
+}
+
+apply plugin: 'java'
+apply plugin: 'org.asciidoctor.convert'
+
+
+version = '1.0.0-SNAPSHOT'
+
+asciidoctor {
+    attributes 'build-gradle': file('build.gradle'),
+            'sourcedir': project.sourceSets.main.java.srcDirs[0],
+            'endpoint-url': 'http://binary-repositories-comparison.github.io',
+            'source-highlighter': 'coderay',
+            'imagesdir': 'images',
+            'toc': 'left',
+            'icons': 'font',
+            'setanchors': 'true',
+            'idprefix': '',
+            'idseparator': '-',
+            'docinfo1': 'true'
+}
+
+//In travis letting the push.sh do the copy
+task copyDocs(type: Copy) {
+    description = 'Copy the generated html and images to root project'
+    from "$project.buildDir/asciidoc/html5"
+    into project.rootDir
+    doLast {
+        new File("$project.rootDir/Binary-Repository-Manager-Feature-Matrix.html").renameTo(new File("$project.rootDir/index.html"))
+
+    }
+}
+
+//Git push is being done by travis using push.sh
+task release(dependsOn: ['asciidoctor', 'copyDocs']){
+    description = 'Generate asciidoc, Copy resorces to root project'
+
+}
+
+
+copyDocs.mustRunAfter asciidoctor
