@@ -1,5 +1,9 @@
 =  Binary Repository Manager Feature Matrix 
 
+This is a copy of the (now dead) Maven Repository Matrix (http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix). 
+
+This page is collaboratly edited by the maintainers of Archiva, Artifactory and Sonatype Nexus, making it the most non-biased comparison of Binary Repository Managers.
+
 [frame="all", options="header,autowidth"]
 |===
 |Feature |Archiva |Artifactory | Nexus
