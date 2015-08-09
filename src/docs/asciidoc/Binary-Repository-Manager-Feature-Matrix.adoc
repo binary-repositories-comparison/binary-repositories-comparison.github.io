@@ -5,17 +5,17 @@
 |Feature |Archiva |Artifactory | Nexus
 
 |*Screenshots*
-|image:archiva0.png[Archiva0, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/archiva0.png?raw=true"] +
+|image:archiva0.png[Archiva0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/archiva0.png?raw=true"] +
  +
-image:archiva1.png[Archiva1, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory1.png?raw=true"] 
+image:archiva1.png[Archiva1, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory1.png?raw=true"] 
  
-|image:artifactory0.png[Artifactory0, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory0.png?raw=true"] +
+|image:artifactory0.png[Artifactory0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory0.png?raw=true"] +
  +
-image:artifactory1.png[Artifactory1, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory1.png?raw=true"]
+image:artifactory1.png[Artifactory1, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory1.png?raw=true"]
 
-|image:nexus0.png[Nexus0, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus0.png?raw=true"] +
+|image:nexus0.png[Nexus0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus0.png?raw=true"] +
  +
-image:nexus1.png[Nexus0, 300, 200, link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus1.png?raw=true"]
+image:nexus1.png[Nexus0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus1.png?raw=true"]
 
 
 |*Latest Version*
