@@ -1656,11 +1656,25 @@ Uses a separate mirroring mechanism where underlying list of repositories isn&#8
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">VCS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vagrant (Atlas)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+(Pro)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VCS as a Remote Repo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+(Pro)<br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Git LFS implementation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 (Pro)<br>
-Allows using Version Control Systems as a remote repository for any type of file</p></td>
+Allows storing artifacts in Artifactory and retrive them using Git client API<br></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
@@ -2203,13 +2217,19 @@ XMLRPC support in 1.2<br>
 <p><a href="http://www.jfrog.com/confluence/display/RTF/Debian+Repositories">Debian</a> (Pro) - Distribute deb files directly from your Artifactory server, acting as fully-featured Debian repository with auto-updating repo metadata.</p>
 </li>
 <li>
-<p><a href="http://www.jfrog.com/confluence/display/RTF/Docker+Repositories">Docker</a> (Pro) - Use Artifactory to manage your in-house Docker containers. Distribute and share your containers among teams across your organization, whether on-site or at remote locations with docker tool support, including secure pull and search.</p>
+<p><a href="http://www.jfrog.com/confluence/display/RTF/Docker+Repositories">Docker</a> (Pro) - Host and proxy Docker images. Distribute and share your images among teams across your organization, whether on-site or at remote locations with docker tool support, including secure pull and search. Proxy remote Docker registries, including DockerHub for locality and network independence.</p>
+</li>
+<li>
+<p><a href="http://www.jfrog.com/confluence/display/RTF/Vagrant+Repositories">Vagrant</a> (Pro) - Host your Vagrant images in Artifactory with Atlas protocol support.</p>
 </li>
 <li>
 <p><a href="https://www.jfrog.com/confluence/display/RTF/Bower+Repositories">Bower</a> (Pro) - Provision Bower packages directly from Artifactory to the Bower command line tool. Enjoy reliable and consistent access to remote Bower packages, and automatic calculation of metadata for Bower packages stored in our local repositories. Access multiple Bower registries through a single URL.</p>
 </li>
 <li>
 <p><a href="https://www.jfrog.com/confluence/display/RTF/VCS+Repositories">VCS Repositories</a> (Pro) - Proxy a plain version control system as remote repository in Artifactory.</p>
+</li>
+<li>
+<p><a href="http://www.jfrog.com/confluence/display/RTF/Git+LFS+Repositories">Git LFS</a> (Pro) - Host your artifacts in a true artifact repository and work with them as they were commited in Git repos. <a href="https://git-lfs.github.com/">More info on Git LFS</a>.</p>
 </li>
 <li>
 <p><a href="http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API">Advanced REST</a> (Pro) - Bundles a set of power REST commands, such as: Build Promotion, repository replication, aggregated folder tree file-listing, move/copy, sophisticated range searches, etc.</p>
@@ -2277,7 +2297,7 @@ All with unlimited servers.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-08-09 22:57:23 UTC
+Last updated 2015-08-09 23:29:46 UTC
 </div>
 </div>
 </body>
