@@ -18,7 +18,8 @@ asciidoctor {
             'setanchors': 'true',
             'idprefix': '',
             'idseparator': '-',
-            'docinfo1': 'true'
+            'docinfo1': 'true',
+            'stylesheet': "$project.rootDir/src/styles/asciidoctor.css"
 }
 
 //In travis letting the push.sh do the copy
