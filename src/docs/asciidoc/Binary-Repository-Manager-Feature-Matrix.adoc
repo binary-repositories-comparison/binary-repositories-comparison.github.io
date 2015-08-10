@@ -95,7 +95,8 @@ Complete script for installing a standalone Tomcat service on Unix.
 
 |*?*
 
-|RPM for installing on YUM-enabled OSes. More packaging systems coming.
+| - RPM for installing on YUM-enabled OSes. +
+- Docker image.
 
 |*?*
 
