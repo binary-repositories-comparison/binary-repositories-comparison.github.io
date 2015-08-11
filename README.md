@@ -2,7 +2,7 @@
 
 # binary-repositories-comparison.github.io
 
-## Previously known as theMaven Repository Manager Feature Matrix
+## Previously known as the Maven Repository Manager Feature Matrix
 
 That's the reincarnation of the dead now Maven Repository Manager Feature Matrix and it picks up exactly where the Codehaus page left.
 
