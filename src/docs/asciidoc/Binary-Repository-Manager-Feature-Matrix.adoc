@@ -5,8 +5,7 @@ This is the reincarnation of the (now dead) Maven Repository Manager Feature Mat
 
 This page is collaboratly edited by the maintainers of Archiva, Artifactory and Sonatype Nexus, making it the most complete, upt to date and non-biased comparison of Binary Repository Managers.
 
-
-[frame="all", cols="2,3,3,3", options="header"]
+[frame="all", cols="3,5,5,5", options="header"]
 |===
 |Feature |Archiva |Artifactory | Nexus
 
@@ -215,7 +214,7 @@ Fully extensible across the core components, REST API and UI. See the book and t
 |&#10004;
 |&#10004;
 
-4+a|[cols="1,1,1,1", width="90%"]
+4+a|[cols="5,3,3,3", width="100%"]
 !==============================================
 4+!*Checksum checking*
 !fix bad checksums!&#10004;!&#10004;!&#10004;
