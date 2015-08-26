@@ -49,7 +49,6 @@ a|
   - http://repo.jenkins-ci.org/[Jenkins CI] +
   - http://repo.grails.org/[Grails] +
   - http://gradle.artifactoryonline.com/[Gradle] +
-  - http://repo.typesafe.com/[Typesafe] +
   - http://repository.cloudera.com/cloudera/webapp/home.html[Cloudera] +
   - http://jaspersoft.artifactoryonline.com/jaspersoft/[JasperSoft] +
   - http://repo.jfrog.org/artifactory/webapp/home.html[Repo@JFrog]
