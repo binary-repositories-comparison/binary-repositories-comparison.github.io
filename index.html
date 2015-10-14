@@ -869,7 +869,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Latest Version</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.0.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.1.3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.11.2</p></td>
 </tr>
 <tr>
@@ -978,7 +978,7 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">War</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
-   "Drop the War" - deploy into any servlet container with zero configuration.</p></td>
+   "Drop the War" - deploy into existing Tomcat installation with zero configuration.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
    no container configuration required to run the war.</p></td>
 </tr>
@@ -986,7 +986,7 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OS packages</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">- RPM for installing on YUM-enabled OSes.<br>
-- Docker image.</p></td>
+- Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 </tr>
 <tr>
@@ -1695,8 +1695,9 @@ Supports any custom layout with the ability to "understand" per layout what is a
 <td class="tableblock halign-left valign-top"><p class="tableblock">Repository Replication/Syncing</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
-Supports repository or folder-level replication via rsync-like REST API, including support for syncing deletes and controlling overwrites. Supports scheduled or event-driven push mode and pull mode (in Pro).<br>
-Supports multi-site pull replication (collecting from multiple remotes) (in Pro) and multi-site push replication (event-driven or scheduled pushing of artifacts to multiple remotes) (in Enterprise)</p></td>
+ * Supports repository or folder-level replication via rsync-like REST API, including support for syncing deletes and controlling overwrites. Supports scheduled or event-driven push mode and pull mode (in Pro).<br>
+ * Supports multi-site pull replication (collecting from multiple remotes) (in Pro) and multi-site push replication (event-driven or scheduled pushing of artifacts to multiple remotes) (in Enterprise)<br>
+ * Supports additional features if the remote repository proxies Artifactory – syncronization of properties, statistics, delete notifications, etc.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 Smart Proxy enables cache invalidation and pre-emptive fetching between Nexus instances (Pro)</p></td>
 </tr>
@@ -1972,7 +1973,7 @@ with template management</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Client settings provisioning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
-Maven, Ivy and Gradle settings files can be templatized and provisioned via Artifactory (using standard FreeMarker templates)</p></td>
+"Set Me Up" screens with detailed instructions, copy-paste configuration snippets and downloadble configuration files for any repository type.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 Maven settings can be templatized and provisioned using Nexus Maven plugin (Pro)</p></td>
 </tr>
@@ -1987,6 +1988,13 @@ All client plugins allow generation of build BOM on any CI server (inc. cloud-ba
 - Artifactory MsBuild Plugin (works with and without NuGet dependency management)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 Nexus Maven Plugin</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dedicated CLI clients</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<a href="https://github.com/JFrogDev/artifactory-cli-go">Artifactory CLI client</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>CI Integration</strong></p></td>
@@ -2218,7 +2226,7 @@ XMLRPC support in 1.2<br>
 <p><a href="http://www.jfrog.com/confluence/display/RTF/Debian+Repositories">Debian</a> (Pro) - Distribute deb files directly from your Artifactory server, acting as fully-featured Debian repository with auto-updating repo metadata.</p>
 </li>
 <li>
-<p><a href="http://www.jfrog.com/confluence/display/RTF/Docker+Repositories">Docker</a> (Pro) - Host and proxy Docker images. Distribute and share your images among teams across your organization, whether on-site or at remote locations with docker tool support, including secure pull and search. Proxy remote Docker registries, including DockerHub for locality and network independence.</p>
+<p><a href="http://www.jfrog.com/confluence/display/RTF/Docker+Repositories">Docker</a> (Pro) - Host and proxy Docker images. Distribute and share your images among teams across your organization, whether on-site or at remote locations with docker tool support, including secure pull and search. Proxy remote Docker registries, including DockerHub for locality and network independence. Use virtual repositories to simplify pull process.</p>
 </li>
 <li>
 <p><a href="http://www.jfrog.com/confluence/display/RTF/Vagrant+Repositories">Vagrant</a> (Pro) - Host your Vagrant images in Artifactory with Atlas protocol support.</p>
@@ -2300,7 +2308,7 @@ All with unlimited servers.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-08-26 16:45:30 UTC
+Last updated 2015-10-14 18:09:36 UTC
 </div>
 </div>
 </body>
