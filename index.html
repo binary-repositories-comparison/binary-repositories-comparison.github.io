@@ -869,9 +869,9 @@ table.CodeRay td.code>pre{padding:0}
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><a class="image" href="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus0.png?raw=true"><img src="images/nexus0.png" alt="Nexus0" width="100%"></a></span><br>
 <br>
 <span class="image"><a class="image" href="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus1.png?raw=true"><img src="images/nexus1.png" alt="Nexus0" width="100%"></a></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><a class="image" href="http://books.sonatype.com/nexus-book/3.0/reference/figs/web/ui-overview-admin.png"><img src="images/nexus30.png" alt="Nexus30" width="100%"></a></span>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><a class="image" href="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus30.png?raw=true"><img src="images/nexus30.png" alt="Nexus30" width="100%"></a></span>
 <br>
-<span class="image"><a class="image" href="http://books.sonatype.com/nexus-book/3.0/reference/figs/web/ui-list-filtering.png"><img src="images/nexus30.png" alt="Nexus30" width="100%"></a></span></p></td>
+<span class="image"><a class="image" href="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus31.png?raw=true"><img src="images/nexus31.png" alt="Nexus31" width="100%"></a></span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><a class="image" href="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/pdrone0.png?raw=true"><img src="images/pdrone0.png" alt="PackageDrone0" width="100%"></a></span><br>
 <br>
 <span class="image"><a class="image" href="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/pdrone1.png?raw=true"><img src="images/pdrone1.png" alt="PackageDrone1" width="100%"></a></span></p></td>
@@ -1007,13 +1007,43 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OS packages</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- RPM for installing on YUM-enabled OSes.<br>
-- Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="ulist">
+<ul>
+<li>
+<p>RPM for installing on YUM-enabled OSes.</p>
+</li>
+<li>
+<p>Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.</p>
+</li>
+</ul>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- RPM/YUM for CentOS/RHEL 6/7<br>
-- RPM for openSUSE 13.x+<br>
-- DEB/APT for Ubuntu 14.04+</p></td>
+<td class="tableblock halign-left valign-top"><div><div class="ulist">
+<ul>
+<li>
+<p>Windows</p>
+</li>
+<li>
+<p>Mac</p>
+</li>
+<li>
+<p>Linux</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="ulist">
+<ul>
+<li>
+<p>RPM/YUM for CentOS/RHEL 6/7</p>
+</li>
+<li>
+<p>RPM for openSUSE 13.x+</p>
+</li>
+<li>
+<p>DEB/APT for Ubuntu 14.04+</p>
+</li>
+</ul>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Cloud-based SaaS</p></td>
@@ -1043,6 +1073,9 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 <p>Cached NFS,<br></p>
 </li>
 <li>
+<p>HDFS,<br></p>
+</li>
+<li>
 <p><a href="https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage">Cached S3 and compatible</a> storage (Enterprise)</p>
 </li>
 </ul>
@@ -1056,7 +1089,7 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filesystem</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Indexed and querible database</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filesystem</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ravendb (not replacable)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filesystem</p></td>
 </tr>
 <tr>
@@ -1102,8 +1135,7 @@ Partially (with 1.4-M1)</p></td>
 Extensive coverage. Document-first design (not UI coupled, so changes in UI do not break existing REST clients). Uses Jersey. Can be used via strongly-typed Java API. Supports WADL.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 Uses Restlet.org servlet. UI communicates with server via REST to ensure 100% api support</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
-API can be invoked from Groovy scripts that are published to the repository manager and executed there.</p></td>
+<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
@@ -1142,7 +1174,7 @@ Backed by OSGI and Eclipse P2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
@@ -1762,7 +1794,7 @@ Branding with Logo is available (Pro)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 </tr>
 <tr>
@@ -1804,7 +1836,7 @@ Only with Maven layout</p></td>
 (Pro)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 (OSS) searching and custom metadata aren&#8217;t supported</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
@@ -1877,7 +1909,7 @@ With GPG signing</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 (Pro)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
@@ -2691,7 +2723,7 @@ All with unlimited servers.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-04-18 20:59:24 UTC
+Last updated 2016-04-18 21:46:12 UTC
 </div>
 </div>
 </body>
