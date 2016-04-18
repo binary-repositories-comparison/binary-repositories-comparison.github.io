@@ -22,9 +22,9 @@ image:artifactory1.png[Artifactory1, width="100%", link="https://github.com/bina
  +
 image:nexus1.png[Nexus0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus1.png?raw=true"]
 
-|image:nexus30.png[Nexus30, width="100%", link="http://books.sonatype.com/nexus-book/3.0/reference/figs/web/ui-overview-admin.png"]
+|image:nexus30.png[Nexus30, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus30.png?raw=true"]
  +
-image:nexus30.png[Nexus30, width="100%", link="http://books.sonatype.com/nexus-book/3.0/reference/figs/web/ui-list-filtering.png"]
+image:nexus31.png[Nexus31, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus31.png?raw=true"]
 
 |image:pdrone0.png[PackageDrone0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/pdrone0.png?raw=true"] +
  +
@@ -117,16 +117,18 @@ Complete script for installing a standalone Tomcat service on Unix.
 
 |*?*
 
-| - RPM for installing on YUM-enabled OSes. +
-- Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.
+a| - RPM for installing on YUM-enabled OSes.
+  - Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.
 
 |*?*
 
-|*?*
+a| - Windows
+  - Mac
+  - Linux
 
-| - RPM/YUM for CentOS/RHEL 6/7 +
-- RPM for openSUSE 13.x+ +
-- DEB/APT for Ubuntu 14.04+
+a| - RPM/YUM for CentOS/RHEL 6/7
+  - RPM for openSUSE 13.x+
+  - DEB/APT for Ubuntu 14.04+
 
 |Cloud-based SaaS
 
@@ -151,6 +153,7 @@ https://hub.openshift.com/quickstarts/90-package-drone[OpenShift Quickstart] - p
 a| - Filesystem +
  - Database (not reccomeneded for large repositories), +
  - Cached NFS, +
+ - HDFS, +
  - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise)
 
 |Filesystem
@@ -167,7 +170,7 @@ a| - Filesystem +
 
 |Filesystem
 
-|
+|ravendb (not replacable)
 
 |Filesystem
 
@@ -220,8 +223,7 @@ Extensive coverage. Document-first design (not UI coupled, so changes in UI do n
 |&#10004; +
 Uses Restlet.org servlet. UI communicates with server via REST to ensure 100% api support
 
-|&#10004; +
-API can be invoked from Groovy scripts that are published to the repository manager and executed there.
+|
 
 |&#10008;
 
@@ -262,7 +264,7 @@ Backed by OSGI and Eclipse P2
 |&#10004;
 |&#10004;
 |&#10004;
-|
+|&#10004;
 |&#10008;
 
 |Nest and reuse Repository Groups
@@ -821,7 +823,7 @@ Branding with Logo is available (Pro)
 |&#10004;
 |&#10004;
 |&#10004;
-|
+|&#10004;
 |&#10004;
 
 |Maven 1
@@ -859,7 +861,7 @@ Only with Maven layout
 (Pro)
 |&#10004; +
 (OSS) searching and custom metadata aren't supported
-|
+|&#10004;
 |&#10008;
 
 |Yum
@@ -925,7 +927,7 @@ With GPG signing
 |&#10004; +
 (Pro)
 |&#10008;
-|
+|&#10004;
 |&#10008;
 
 |Vagrant (Atlas)
