@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.2.2
+|4.3.3
 |2.11.2
 |3.0
 |0.12.1
@@ -155,6 +155,7 @@ a| - Filesystem +
  - Database (not reccomeneded for large repositories), +
  - Cached NFS, +
  - HDFS, +
+ - Google Cloud Storage (GCS), +
  - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise)
 
 |Filesystem
@@ -1157,6 +1158,13 @@ Viewer, Manager, Admin
 |&#10004;
 |
 |&#10008;
+
+|Authentication by API key
+|
+|&#10004;
+|
+|
+|
 
 |Allow external security
 |&#10008;
