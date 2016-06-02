@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.1.3
+|4.3.3
 |2.11.2
 |3.0
 |0.12.1
@@ -118,6 +118,7 @@ Complete script for installing a standalone Tomcat service on Unix.
 |*?*
 
 a| - RPM for installing on YUM-enabled OSes.
+  - Debian package
   - Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.
 
 |*?*
@@ -154,6 +155,7 @@ a| - Filesystem +
  - Database (not reccomeneded for large repositories), +
  - Cached NFS, +
  - HDFS, +
+ - Google Cloud Storage (GCS), +
  - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise)
 
 |Filesystem
@@ -892,7 +894,7 @@ Based on Maven Tycho deployed meta data or natively extracted
 (Pro)
 |&#10004; +
 (OSS) browsing, searching and custom metadata aren't supported
-|
+|&#10004;
 |&#10004; +
 read only
 
@@ -1157,6 +1159,13 @@ Viewer, Manager, Admin
 |
 |&#10008;
 
+|Authentication by API key
+|
+|&#10004;
+|
+|
+|
+
 |Allow external security
 |&#10008;
 |&#10004; +
@@ -1169,7 +1178,11 @@ via Shiro realm
 |Allow external authentication
 |&#10004;
 |&#10004; +
-via Spring security or via pluggable realms written in Groovy
+via Spring security or via pluggable realms written in Groovy; +
+OAuth +
+ - Google +
+ - Open ID +
+ - GitHub Enterprise
 |&#10004; +
 via Shiro
 |
