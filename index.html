@@ -879,7 +879,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Latest Version</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.0.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4.1.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.3.3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.11.2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0.12.1</p></td>
@@ -1013,6 +1013,9 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 <p>RPM for installing on YUM-enabled OSes.</p>
 </li>
 <li>
+<p>Debian package</p>
+</li>
+<li>
 <p>Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.</p>
 </li>
 </ul>
@@ -1074,6 +1077,9 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 </li>
 <li>
 <p>HDFS,<br></p>
+</li>
+<li>
+<p>Google Cloud Storage (GCS),<br></p>
 </li>
 <li>
 <p><a href="https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage">Cached S3 and compatible</a> storage (Enterprise)</p>
@@ -1870,7 +1876,7 @@ Based on Maven Tycho deployed meta data or natively extracted</p></td>
 (Pro)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 (OSS) browsing, searching and custom metadata aren&#8217;t supported</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 read only</p></td>
 </tr>
@@ -2169,6 +2175,14 @@ Viewer, Manager, Admin</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authentication by API key</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allow external security</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
@@ -2182,7 +2196,11 @@ via Shiro realm</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allow external authentication</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
-via Spring security or via pluggable realms written in Groovy</p></td>
+via Spring security or via pluggable realms written in Groovy;<br>
+OAuth<br>
+ - Google<br>
+ - Open ID<br>
+ - GitHub Enterprise</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 via Shiro</p></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -2723,7 +2741,7 @@ All with unlimited servers.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-04-18 21:46:12 UTC
+Last updated 2016-06-02 10:42:48 UTC
 </div>
 </div>
 </body>
