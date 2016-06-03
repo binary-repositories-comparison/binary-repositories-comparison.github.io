@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.5
+|4.6
 |2.11.2
 |3.0
 |0.12.1
@@ -148,32 +148,31 @@ https://hub.openshift.com/quickstarts/90-package-drone[OpenShift Quickstart] - p
 6+|*Artifacts and Metadata Storage*
 
 |Artifacts storage
-
 |Filesystem
-
 a| - Filesystem +
  - Database (not reccomeneded for large repositories), +
  - Cached NFS, +
  - HDFS, +
  - Google Cloud Storage (GCS), +
- - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise)
-
+ - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise) +
+ with support of server side encryption
 |Filesystem
-
 |File system-based blob storage
-
 |Filesystem
+
+|Filestore sharding
+|
+|&#10004; +
+(Enterprise)
+|
+|
+|
 
 |Metadata storage
-
 |Filesystem
-
 |Indexed and querible database
-
 |Filesystem
-
 |ravendb (not replacable)
-
 |Filesystem
 
 6+|*Configuration*
@@ -911,6 +910,7 @@ read only
 |Opkg
 |
 |&#10004; +
+(Pro) +
 With GPG signing
 |&#10008;
 |&#10008;
@@ -921,6 +921,14 @@ With GPG signing
 |&#10004;
 |&#10008;
 |&#10008;
+|
+
+|Bower
+|
+|&#10004; +
+(Pro)
+|&#10008;
+|&#10004;
 |
 
 |Debian packages
