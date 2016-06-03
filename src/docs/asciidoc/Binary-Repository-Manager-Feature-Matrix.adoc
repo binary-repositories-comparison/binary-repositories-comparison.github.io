@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.3.3
+|4.4
 |2.11.2
 |3.0
 |0.12.1
@@ -721,7 +721,8 @@ POM view, size, deployed by, age, last downloaded and by whom, times downloaded,
 
 |Delete Artifacts
 |&#10004;
-|&#10004;
+|&#10004; +
+with a trash can that prevents accidental deletion
 |&#10004;
 |
 |&#10004;
@@ -907,6 +908,14 @@ read only
 |
 |&#10008;
 
+|Opkg
+|
+|&#10004; +
+With GPG signing
+|&#10008;
+|
+|
+
 |Debian packages
 |&#10008;
 |&#10004; +
@@ -952,7 +961,8 @@ With GPG signing
 |&#10008;
 |&#10004; +
 (Pro) +
-Allows storing artifacts in Artifactory and retrive them using Git client API +
+Allows storing artifacts in Artifactory and retrive them using Git client API. +
+Supports SSH Authentication.
 |&#10008;
 |
 |&#10008;
