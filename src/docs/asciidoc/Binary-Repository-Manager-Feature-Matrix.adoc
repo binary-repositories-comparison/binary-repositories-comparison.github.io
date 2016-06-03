@@ -1302,7 +1302,7 @@ Encrypted user passwords
 
 |UI for GPG key management
 |*?*
-|*?*
+|&#10004;
 |*?*
 |
 |&#10004;
