@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.4
+|4.5
 |2.11.2
 |3.0
 |0.12.1
@@ -913,7 +913,14 @@ read only
 |&#10004; +
 With GPG signing
 |&#10008;
+|&#10008;
 |
+
+|CocoaPods
+|
+|&#10004;
+|&#10008;
+|&#10008;
 |
 
 |Debian packages
