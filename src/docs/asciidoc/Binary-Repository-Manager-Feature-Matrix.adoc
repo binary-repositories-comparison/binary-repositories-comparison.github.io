@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.6
+|4.7
 |2.11.2
 |3.0
 |0.12.1
@@ -110,7 +110,7 @@ Complete script for installing a standalone Tomcat service on Unix.
    no container configuration required to run the war.
 
    |
-   
+
    |&#10008;
 
 |OS packages
@@ -351,7 +351,7 @@ Backed by OSGI and Eclipse P2
   |&#10004;
 
   |
-  
+
   |&#10004; +
   Not required. Package Drones's Maven metadata.xml is server calculated and is inherently up-to-date.
 
@@ -977,7 +977,7 @@ With GPG signing
 |&#10004; +
 (Pro) +
 Allows storing artifacts in Artifactory and retrive them using Git client API. +
-Supports SSH Authentication.
+Supports remote and virtual Git LFS repositories and SSH Authentication.
 |&#10008;
 |
 |&#10008;
@@ -1008,7 +1008,7 @@ By implementing an adapter plugin
 Smart Proxy enables cache invalidation and pre-emptive fetching between Nexus instances (Pro)
 |
 |&#10004; +
-Manual process of export and import 
+Manual process of export and import
 
 |Store same binary only once
 |&#10008;
@@ -1469,7 +1469,7 @@ a|-  available docs: http://nexus.sonatype.org/[site], http://www.sonatype.com/b
 - http://www.sonatype.com/nexus/compare-repos[feature matrix]
 |
 a|-  available docs: https://eclipse.org/package-drone/[project page], https://wiki.eclipse.org/PackageDrone[Wiki], http://packagedrone.org[Blog]
-- live instances: https://packagedrone.eclipse.org[Eclipse], https://thedrone.packagedrone.org[The Drone] 
+- live instances: https://packagedrone.eclipse.org[Eclipse], https://thedrone.packagedrone.org[The Drone]
 
 6+|*Repository Purge*
 
