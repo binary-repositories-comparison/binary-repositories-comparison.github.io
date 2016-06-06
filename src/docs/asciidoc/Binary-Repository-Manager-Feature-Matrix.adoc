@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.7
+|4.8
 |2.11.2
 |3.0
 |0.12.1
@@ -60,7 +60,6 @@ a| - https://archiva-repository.apache.org/archiva/index.html?request_lang=en[Ar
 
 a|
  - https://oss.jfrog.org/webapp/home.html[oss.jfrog.org ] (https://www.jfrog.com/confluence/pages/viewpage.action?pageId=26083425[free accounts for OSS projects]) +
-  - http://repo.springsource.org/[SpringSource] +
   - http://repo.jenkins-ci.org/[Jenkins CI] +
   - http://repo.grails.org/[Grails] +
   - http://gradle.artifactoryonline.com/[Gradle] +
@@ -940,7 +939,7 @@ With GPG signing
 |&#10004; +
 With GPG signing
 
-|Python Eggs
+|Python Eggs (PyPI)
 |&#10008;
 |&#10004; +
 (Pro)
@@ -1462,14 +1461,21 @@ Uses H2 for metadata, not for artifacts
 |*Documentation*
 a|- available docs: http://archiva.apache.org/[site], http://cwiki.apache.org/confluence/display/ARCHIVA/[wiki] +
 - live instances: http://vmbuild.apache.org/vmbuild/[vmbuild], http://maven.atlassian.com/[Atlassian], http://archiva.exist.com/[Exist] (includes searchable Central repository)
-a|-  available doc: http://www.jfrog.com/[site], http://www.jfrog.com/confluence/pages/viewpage.action?pageId=25067914[wiki], http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide[User Guide] +
+a|-  available doc: http://www.jfrog.com/[site], http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide[User Guide] +
 Live browsable and searchable http://repo.jfrog.org/artifactory/webapp/home.html[demo]
-a|-  available docs: http://nexus.sonatype.org/[site], http://www.sonatype.com/book/reference/repository-manager.html[Online Book] and http://www.sonatype.com/book/pdf/maven-definitive-guide.pdf[Printed Book] +
+a|-  available docs: http://nexus.sonatype.org/[site], +
 - live http://repository.sonatype.org/[instance] that includes searchable Central repository +
 - http://www.sonatype.com/nexus/compare-repos[feature matrix]
 |
 a|-  available docs: https://eclipse.org/package-drone/[project page], https://wiki.eclipse.org/PackageDrone[Wiki], http://packagedrone.org[Blog]
 - live instances: https://packagedrone.eclipse.org[Eclipse], https://thedrone.packagedrone.org[The Drone]
+
+|*Simple "one-click" push to distribution repository*
+|
+|&#10004;
+|&#10008;
+|&#10008;
+|
 
 6+|*Repository Purge*
 
