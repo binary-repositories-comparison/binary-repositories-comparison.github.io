@@ -879,7 +879,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Latest Version</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.0.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4.3.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.8</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.11.2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0.12.1</p></td>
@@ -901,7 +901,7 @@ table.CodeRay td.code>pre{padding:0}
 <td class="tableblock halign-left valign-top"><p class="tableblock">All versions: Apache License 2.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lesser GNU General Public License 3.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Public License Version 1.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States license</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Public License Version 1.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Public License Version 1.0</p></td>
 </tr>
 <tr>
@@ -919,7 +919,7 @@ table.CodeRay td.code>pre{padding:0}
 <p><a href="https://oss.jfrog.org/webapp/home.html">oss.jfrog.org </a> (<a href="https://www.jfrog.com/confluence/pages/viewpage.action?pageId=26083425">free accounts for OSS projects</a>)<br></p>
 </li>
 <li>
-<p><a href="http://repo.springsource.org/">SpringSource</a><br></p>
+<p><a href="https://repo.spring.io">SpringSource</a><br></p>
 </li>
 <li>
 <p><a href="http://repo.jenkins-ci.org/">Jenkins CI</a><br></p>
@@ -1082,13 +1082,23 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 <p>Google Cloud Storage (GCS),<br></p>
 </li>
 <li>
-<p><a href="https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage">Cached S3 and compatible</a> storage (Enterprise)</p>
+<p><a href="https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage">Cached S3 and compatible</a> storage (Enterprise)<br>
+with support of server side encryption</p>
 </li>
 </ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filesystem</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">File system-based blob storage</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filesystem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filestore sharding</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+(Enterprise)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Metadata storage</p></td>
@@ -1685,7 +1695,8 @@ POM view, size, deployed by, age, last downloaded and by whom, times downloaded,
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Delete Artifacts</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+with a trash can that prevents accidental deletion</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
@@ -1891,6 +1902,33 @@ read only</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opkg</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+(Pro)<br>
+With GPG signing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CocoaPods</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bower</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+(Pro)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Debian packages</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
@@ -1901,7 +1939,7 @@ read only</p></td>
 With GPG signing</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Python Eggs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python Eggs (PyPI)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 (Pro)</p></td>
@@ -1941,7 +1979,8 @@ With GPG signing</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
 (Pro)<br>
-Allows storing artifacts in Artifactory and retrive them using Git client API<br></p></td>
+Allows storing artifacts in Artifactory and retrive them using Git client API.<br>
+Supports remote and virtual Git LFS repositories and SSH Authentication.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
@@ -2322,7 +2361,7 @@ Encrypted user passwords</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UI for GPG key management</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
@@ -2509,17 +2548,14 @@ Uses H2 for metadata, not for artifacts</p></td>
 <td class="tableblock halign-left valign-top"><div><div class="ulist">
 <ul>
 <li>
-<p>available docs: <a href="http://archiva.apache.org/">site</a>, <a href="http://cwiki.apache.org/confluence/display/ARCHIVA/">wiki</a><br></p>
-</li>
-<li>
-<p>live instances: <a href="http://vmbuild.apache.org/vmbuild/">vmbuild</a>, <a href="http://maven.atlassian.com/">Atlassian</a>, <a href="http://archiva.exist.com/">Exist</a> (includes searchable Central repository)</p>
+<p>available docs: <a href="http://archiva.apache.org/">site</a>, <a href="http://cwiki.apache.org/confluence/display/ARCHIVA/">wiki</a></p>
 </li>
 </ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div><div class="ulist">
 <ul>
 <li>
-<p>available doc: <a href="http://www.jfrog.com/">site</a>, <a href="http://www.jfrog.com/confluence/pages/viewpage.action?pageId=25067914">wiki</a>, <a href="http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide">User Guide</a><br>
+<p>available doc: <a href="http://www.jfrog.com/">site</a>, <a href="http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide">User Guide</a><br>
 Live browsable and searchable <a href="http://repo.jfrog.org/artifactory/webapp/home.html">demo</a></p>
 </li>
 </ul>
@@ -2527,17 +2563,20 @@ Live browsable and searchable <a href="http://repo.jfrog.org/artifactory/webapp/
 <td class="tableblock halign-left valign-top"><div><div class="ulist">
 <ul>
 <li>
-<p>available docs: <a href="http://nexus.sonatype.org/">site</a>, <a href="http://www.sonatype.com/book/reference/repository-manager.html">Online Book</a> and <a href="http://www.sonatype.com/book/pdf/maven-definitive-guide.pdf">Printed Book</a><br></p>
+<p>available docs: <a href="http://nexus.sonatype.org/">site</a>,<br></p>
 </li>
 <li>
-<p>live <a href="http://repository.sonatype.org/">instance</a> that includes searchable Central repository<br></p>
-</li>
-<li>
-<p><a href="http://www.sonatype.com/nexus/compare-repos">feature matrix</a></p>
+<p>live <a href="http://repository.sonatype.org/">instance</a> that includes searchable Central repository</p>
 </li>
 </ul>
 </div></div></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div><div class="ulist">
+<ul>
+<li>
+<p>available docs: <a href="http://books.sonatype.com/nexus-book/3.0/reference/index.html">Online Book</a>, <a href="http://books.sonatype.com/nexus-book/3.0/pdf/nxbook-pdf.pdf">PDF</a></p>
+</li>
+</ul>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div><div class="ulist">
 <ul>
 <li>
@@ -2548,6 +2587,14 @@ Live browsable and searchable <a href="http://repo.jfrog.org/artifactory/webapp/
 </li>
 </ul>
 </div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Simple "one-click" push to distribution repository</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Repository Purge</strong></p></td>
@@ -2741,7 +2788,7 @@ All with unlimited servers.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-06-02 10:42:48 UTC
+Last updated 2016-06-06 18:33:24 UTC
 </div>
 </div>
 </body>
