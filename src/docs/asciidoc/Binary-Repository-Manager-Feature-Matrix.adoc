@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.3.3
+|4.8
 |2.11.2
 |3.0
 |0.12.1
@@ -52,7 +52,7 @@ https://github.com/ctron/package-drone/releases[Early Release History (GitHub)]
 |All versions: Apache License 2.0
 |Lesser GNU General Public License 3.0
 |Eclipse Public License Version 1.0
-|Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States license
+|Eclipse Public License Version 1.0
 |Eclipse Public License Version 1.0
 
 |*Public Instances*
@@ -60,7 +60,7 @@ a| - https://archiva-repository.apache.org/archiva/index.html?request_lang=en[Ar
 
 a|
  - https://oss.jfrog.org/webapp/home.html[oss.jfrog.org ] (https://www.jfrog.com/confluence/pages/viewpage.action?pageId=26083425[free accounts for OSS projects]) +
-  - http://repo.springsource.org/[SpringSource] +
+  - https://repo.spring.io[SpringSource] +
   - http://repo.jenkins-ci.org/[Jenkins CI] +
   - http://repo.grails.org/[Grails] +
   - http://gradle.artifactoryonline.com/[Gradle] +
@@ -110,7 +110,7 @@ Complete script for installing a standalone Tomcat service on Unix.
    no container configuration required to run the war.
 
    |
-   
+
    |&#10008;
 
 |OS packages
@@ -148,32 +148,31 @@ https://hub.openshift.com/quickstarts/90-package-drone[OpenShift Quickstart] - p
 6+|*Artifacts and Metadata Storage*
 
 |Artifacts storage
-
 |Filesystem
-
 a| - Filesystem +
  - Database (not reccomeneded for large repositories), +
  - Cached NFS, +
  - HDFS, +
  - Google Cloud Storage (GCS), +
- - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise)
-
+ - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise) +
+ with support of server side encryption
 |Filesystem
-
 |File system-based blob storage
-
 |Filesystem
+
+|Filestore sharding
+|
+|&#10004; +
+(Enterprise)
+|
+|
+|
 
 |Metadata storage
-
 |Filesystem
-
 |Indexed and querible database
-
 |Filesystem
-
 |ravendb (not replacable)
-
 |Filesystem
 
 6+|*Configuration*
@@ -352,7 +351,7 @@ Backed by OSGI and Eclipse P2
   |&#10004;
 
   |
-  
+
   |&#10004; +
   Not required. Package Drones's Maven metadata.xml is server calculated and is inherently up-to-date.
 
@@ -721,7 +720,8 @@ POM view, size, deployed by, age, last downloaded and by whom, times downloaded,
 
 |Delete Artifacts
 |&#10004;
-|&#10004;
+|&#10004; +
+with a trash can that prevents accidental deletion
 |&#10004;
 |
 |&#10004;
@@ -907,6 +907,30 @@ read only
 |
 |&#10008;
 
+|Opkg
+|
+|&#10004; +
+(Pro) +
+With GPG signing
+|&#10008;
+|&#10008;
+|
+
+|CocoaPods
+|
+|&#10004;
+|&#10008;
+|&#10008;
+|
+
+|Bower
+|
+|&#10004; +
+(Pro)
+|&#10008;
+|&#10004;
+|
+
 |Debian packages
 |&#10008;
 |&#10004; +
@@ -916,7 +940,7 @@ read only
 |&#10004; +
 With GPG signing
 
-|Python Eggs
+|Python Eggs (PyPI)
 |&#10008;
 |&#10004; +
 (Pro)
@@ -952,7 +976,8 @@ With GPG signing
 |&#10008;
 |&#10004; +
 (Pro) +
-Allows storing artifacts in Artifactory and retrive them using Git client API +
+Allows storing artifacts in Artifactory and retrive them using Git client API. +
+Supports remote and virtual Git LFS repositories and SSH Authentication.
 |&#10008;
 |
 |&#10008;
@@ -983,7 +1008,7 @@ By implementing an adapter plugin
 Smart Proxy enables cache invalidation and pre-emptive fetching between Nexus instances (Pro)
 |
 |&#10004; +
-Manual process of export and import 
+Manual process of export and import
 
 |Store same binary only once
 |&#10008;
@@ -1292,7 +1317,7 @@ Encrypted user passwords
 
 |UI for GPG key management
 |*?*
-|*?*
+|&#10004;
 |*?*
 |
 |&#10004;
@@ -1435,16 +1460,21 @@ Uses H2 for metadata, not for artifacts
 |&#10004;
 
 |*Documentation*
-a|- available docs: http://archiva.apache.org/[site], http://cwiki.apache.org/confluence/display/ARCHIVA/[wiki] +
-- live instances: http://vmbuild.apache.org/vmbuild/[vmbuild], http://maven.atlassian.com/[Atlassian], http://archiva.exist.com/[Exist] (includes searchable Central repository)
-a|-  available doc: http://www.jfrog.com/[site], http://www.jfrog.com/confluence/pages/viewpage.action?pageId=25067914[wiki], http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide[User Guide] +
+a|- available docs: http://archiva.apache.org/[site], http://cwiki.apache.org/confluence/display/ARCHIVA/[wiki]
+a|-  available doc: http://www.jfrog.com/[site], http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide[User Guide] +
 Live browsable and searchable http://repo.jfrog.org/artifactory/webapp/home.html[demo]
-a|-  available docs: http://nexus.sonatype.org/[site], http://www.sonatype.com/book/reference/repository-manager.html[Online Book] and http://www.sonatype.com/book/pdf/maven-definitive-guide.pdf[Printed Book] +
-- live http://repository.sonatype.org/[instance] that includes searchable Central repository +
-- http://www.sonatype.com/nexus/compare-repos[feature matrix]
-|
+a|-  available docs: http://nexus.sonatype.org/[site], +
+- live http://repository.sonatype.org/[instance] that includes searchable Central repository
+a|- available docs: http://books.sonatype.com/nexus-book/3.0/reference/index.html[Online Book], http://books.sonatype.com/nexus-book/3.0/pdf/nxbook-pdf.pdf[PDF]
 a|-  available docs: https://eclipse.org/package-drone/[project page], https://wiki.eclipse.org/PackageDrone[Wiki], http://packagedrone.org[Blog]
-- live instances: https://packagedrone.eclipse.org[Eclipse], https://thedrone.packagedrone.org[The Drone] 
+- live instances: https://packagedrone.eclipse.org[Eclipse], https://thedrone.packagedrone.org[The Drone]
+
+|*Simple "one-click" push to distribution repository*
+|
+|&#10004;
+|&#10008;
+|&#10008;
+|
 
 6+|*Repository Purge*
 
