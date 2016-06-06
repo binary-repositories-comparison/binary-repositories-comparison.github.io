@@ -1464,8 +1464,7 @@ a|- available docs: http://archiva.apache.org/[site], http://cwiki.apache.org/co
 a|-  available doc: http://www.jfrog.com/[site], http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide[User Guide] +
 Live browsable and searchable http://repo.jfrog.org/artifactory/webapp/home.html[demo]
 a|-  available docs: http://nexus.sonatype.org/[site], +
-- live http://repository.sonatype.org/[instance] that includes searchable Central repository +
-- http://www.sonatype.com/nexus/compare-repos[feature matrix]
+- live http://repository.sonatype.org/[instance] that includes searchable Central repository
 a|- available docs: http://books.sonatype.com/nexus-book/3.0/reference/index.html[Online Book], http://books.sonatype.com/nexus-book/3.0/pdf/nxbook-pdf.pdf[PDF]
 a|-  available docs: https://eclipse.org/package-drone/[project page], https://wiki.eclipse.org/PackageDrone[Wiki], http://packagedrone.org[Blog]
 - live instances: https://packagedrone.eclipse.org[Eclipse], https://thedrone.packagedrone.org[The Drone]
