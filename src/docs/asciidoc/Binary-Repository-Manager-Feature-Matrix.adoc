@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.8
+|4.9.1
 |2.11.2
 |3.0
 |0.12.1
@@ -1208,6 +1208,7 @@ via Shiro realm
 |&#10004;
 |&#10004; +
 via Spring security or via pluggable realms written in Groovy; +
+Atlassian Crowd/JIRA; +
 OAuth +
  - Google +
  - Open ID +
