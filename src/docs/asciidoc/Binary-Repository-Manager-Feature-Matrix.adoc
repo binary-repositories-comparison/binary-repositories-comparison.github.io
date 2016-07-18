@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.8
+|4.9.1
 |2.11.2
 |3.0
 |0.12.1
@@ -60,7 +60,7 @@ a| - https://archiva-repository.apache.org/archiva/index.html?request_lang=en[Ar
 
 a|
  - https://oss.jfrog.org/webapp/home.html[oss.jfrog.org ] (https://www.jfrog.com/confluence/pages/viewpage.action?pageId=26083425[free accounts for OSS projects]) +
-  - https://repo.spring.io[SpringSource] +
+  - https://repo.spring.io[spring.io] +
   - http://repo.jenkins-ci.org/[Jenkins CI] +
   - http://repo.grails.org/[Grails] +
   - http://gradle.artifactoryonline.com/[Gradle] +
@@ -120,6 +120,10 @@ Complete script for installing a standalone Tomcat service on Unix.
 a| - RPM for installing on YUM-enabled OSes.
   - Debian package
   - Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.
+  - https://bitnami.com/stack/artifactory[Bitnami (OSS only)]:
+    * Windows
+    * OS X
+    * Linux
 
 |*?*
 
@@ -1204,6 +1208,7 @@ via Shiro realm
 |&#10004;
 |&#10004; +
 via Spring security or via pluggable realms written in Groovy; +
+Atlassian Crowd/JIRA; +
 OAuth +
  - Google +
  - Open ID +
