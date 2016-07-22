@@ -50,7 +50,8 @@ https://github.com/ctron/package-drone/releases[Early Release History (GitHub)]
 
 |*License History*
 |All versions: Apache License 2.0
-|Lesser GNU General Public License 3.0
+|Lesser GNU General Public License 3.0 (up to v4.8.1) +
+GNU Affero General Public License 3.0 (from v4.8.1)
 |Eclipse Public License Version 1.0
 |Eclipse Public License Version 1.0
 |Eclipse Public License Version 1.0
