@@ -577,6 +577,14 @@ Known Indexes publishing compatible Index: Central, Apache, Java.Net, more here
 |
 |[red]*&#10008;*
 
+| Connection to external indexing and impact analysis systems
+|[red]*&#10008;*
+|[green]*&#10004;* +
+- JFrog Xray
+|[red]*&#10008;*
+|[red]*&#10008;*
+|[red]*&#10008;*
+
 |Class search
 |[green]*&#10004;*
 |[green]*&#10004;* +
