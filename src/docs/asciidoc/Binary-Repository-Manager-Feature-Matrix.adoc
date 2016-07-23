@@ -166,12 +166,12 @@ a| - Filesystem +
 |Filesystem
 
 |Filestore sharding
-|
+|[red]*&#10008;*
 |[green]*&#10004;* +
 (Enterprise)
-|
-|
-|
+|[red]*&#10008;*
+|[red]*&#10008;*
+|[red]*&#10008;*
 
 |Metadata storage
 |Filesystem
@@ -182,29 +182,22 @@ a| - Filesystem +
 
 6+|*Configuration*
 
-
 |UI configurable
-
 |[green]*&#10004;* +
 Partially
-
 |[green]*&#10004;* +
 Fully configurable via Ajax UI with extensive online help, or REST API
-
 |[green]*&#10004;* +
 100% configuration with Ajax UI or REST API
-
 |
-
 |[green]*&#10004;* +
 Fully configurable via mobile friendly UI
 
 |Config Storage
-
 |XML
 |Database, with XML import/export
 |h2 embedded database, XML and other files
-|
+|ravendb database (not exportable)
 |Filesystem
 
 6+|*Extensibility/ +
