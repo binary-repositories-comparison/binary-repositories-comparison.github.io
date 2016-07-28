@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.9.1
+|4.10
 |2.11.2
 |3.0
 |0.12.1
@@ -669,6 +669,14 @@ currently viewable from text file only
 |[green]*&#10004;* +
 etailed audit logs for all actions and their sources in access.log
 |[green]*&#10004;*
+|[red]*&#10008;*
+|[red]*&#10008;*
+
+|External log analytics integration
+|[red]*&#10008;*
+|[green]*&#10004;* +
+seamless integration with a dedicated app in SumoLogic
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 
