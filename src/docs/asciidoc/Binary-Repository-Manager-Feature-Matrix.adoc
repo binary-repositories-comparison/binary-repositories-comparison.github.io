@@ -32,7 +32,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 
 |*Latest Version*
 |2.0.1
-|4.10
+|4.11.2
 |2.11.2
 |3.0
 |0.12.1
@@ -115,6 +115,7 @@ Complete script for installing a standalone Tomcat service on Unix.
 
 a| - RPM for installing on YUM-enabled OSes.
   - Debian package
+  - Debian distribution for Xenial (Ubuntu 16.04)
   - Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.
   - https://bitnami.com/stack/artifactory[Bitnami (OSS only)]:
     * Windows
@@ -154,6 +155,7 @@ a| - Filesystem +
  - Cached NFS, +
  - HDFS, +
  - Google Cloud Storage (GCS), +
+ - Google S3 storage +
  - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise) +
  with support of server side encryption
 |Filesystem
@@ -856,7 +858,7 @@ Only with Maven layout
 |Yum
 |[red]*&#10008;*
 |[green]*&#10004;* +
-(Pro)
+With GPG signing (Pro)
 |[green]*&#10004;* +
 (OSS)
 |*?*
