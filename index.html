@@ -879,7 +879,7 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Latest Version</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.0.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4.9.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.11.2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2.11.2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0.12.1</p></td>
@@ -899,7 +899,8 @@ table.CodeRay td.code>pre{padding:0}
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>License History</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">All versions: Apache License 2.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lesser GNU General Public License 3.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lesser GNU General Public License 3.0 (up to v4.8.1)<br>
+GNU Affero General Public License 3.0 (from v4.8.1)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Public License Version 1.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Public License Version 1.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Public License Version 1.0</p></td>
@@ -966,7 +967,7 @@ table.CodeRay td.code>pre{padding:0}
 </li>
 </ul>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 <td class="tableblock halign-left valign-top"><div><div class="ulist">
 <ul>
 <li>
@@ -983,26 +984,26 @@ table.CodeRay td.code>pre{padding:0}
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Standalone</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
    Embedded Jetty. JSW launch scripts - runs as a service on windows and unix</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
    Bundled Tomcat - runs as a service on Windows and Unix. Complete script for installation as a service on unix, includes: user creation, permission settings and service config.
 Complete script for installing a standalone Tomcat service on Unix.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
    Embedded Jetty. JSW launch scripts - runs as a service on windows and unix. Also Native Solaris Service Manager Scripts.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
    Eclipse Equinox OSGi Application with Jetty 9. Start by shell script or "java -jar". Startup scripts for SystemV, Ubuntu Upstart, systemd.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">War</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
    "Drop the War" - deploy into existing Tomcat installation with zero configuration.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
    no container configuration required to run the war.</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OS packages</p></td>
@@ -1014,6 +1015,9 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 </li>
 <li>
 <p>Debian package</p>
+</li>
+<li>
+<p>Debian distribution for Xenial (Ubuntu 16.04)</p>
 </li>
 <li>
 <p>Docker images for OSS and Pro versions. Special image preconfigured to use as Docker Registry.</p>
@@ -1066,12 +1070,12 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Cloud-based SaaS</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 <a href="http://www.jfrog.com/home/v_artifactorycloud_overview">Artifactory Online</a> - private Artifactory instance in the cloud with full self service, pay-per-use model and always up-to-date with all the latest features</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 <a href="https://hub.openshift.com/quickstarts/90-package-drone">OpenShift Quickstart</a> - private Package Drone instance in the cloud with full self service</p></td>
 </tr>
 <tr>
@@ -1098,6 +1102,9 @@ Complete script for installing a standalone Tomcat service on Unix.</p></td>
 <p>Google Cloud Storage (GCS),<br></p>
 </li>
 <li>
+<p>Google S3 storage<br></p>
+</li>
+<li>
 <p><a href="https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage">Cached S3 and compatible</a> storage (Enterprise)<br>
 with support of server side encryption</p>
 </li>
@@ -1109,12 +1116,12 @@ with support of server side encryption</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filestore sharding</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Enterprise)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Metadata storage</p></td>
@@ -1129,14 +1136,14 @@ with support of server side encryption</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UI configurable</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Partially</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Fully configurable via Ajax UI with extensive online help, or REST API</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 100% configuration with Ajax UI or REST API</p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Fully configurable via mobile friendly UI</p></td>
 </tr>
 <tr>
@@ -1144,7 +1151,7 @@ Fully configurable via mobile friendly UI</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">XML</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Database, with XML import/export</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">h2 embedded database, XML and other files</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ravendb database (not exportable)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Filesystem</p></td>
 </tr>
 <tr>
@@ -1156,30 +1163,30 @@ Orthogonality</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spring</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spring</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Google Guice</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OSGi</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">REST API</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Partially (with 1.4-M1)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Extensive coverage. Document-first design (not UI coupled, so changes in UI do not break existing REST clients). Uses Jersey. Can be used via strongly-typed Java API. Supports WADL.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Uses Restlet.org servlet. UI communicates with server via REST to ensure 100% api support</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Deploy plug-ins without recompilation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Extensible with custom Groovy plugins - schedule tasks, deploy artifacts, change resolution rules and download content, tend to any storage events etc.
 Plugin source files are redeployed on the fly during development and can be edited and debugged in your favorite IDE.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Fully extensible across the core components, REST API and UI. See the book and this post for more info.</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Backed by OSGI and Eclipse P2</p></td>
 </tr>
 <tr>
@@ -1187,229 +1194,229 @@ Backed by OSGI and Eclipse P2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hosted Repositories</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Proxy Repositories</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Aggregate Repositories into single logical repo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nest and reuse Repository Groups</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Groups can contain other groups</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inclusion/exclusion rules per remote proxy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Checksum checking</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">fix bad checksums</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">block bad checksums</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ignore bad checksums</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">repair hosted checksums</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">calculate missing checksums</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">validate client-side checksums</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">on deploy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maven Metadata.xml repair</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
-  Not required. Artifactory&#8217;s Maven metadata.xml is server calculated and is inherently up-to-date.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
-  Not required. Package Drones&#8217;s Maven metadata.xml is server calculated and is inherently up-to-date.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
+Not required. Artifactory&#8217;s Maven metadata.xml is server calculated and is inherently up-to-date.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
+Not required. Package Drones&#8217;s Maven metadata.xml is server calculated and is inherently up-to-date.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Auto-cleanup of repositories declared in POMs</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">On the fly conversion of M1 to M2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 with custom mappings for ambiguous paths</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">On the fly conversion of M2 to M1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eager parallel download of related artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can download jars in parallel as soon as poms are requested, and sources in parallel when jars are requested.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Shared Remote Repository Definitions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Share remote repository definitions and import preconfigured definitions for most common remote repositories, save the configuration hassle.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse Update Site Proxying</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eclipse OSGI / P2 Proxying</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OBR (OSGI Bundle Repository)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OSGI R5 XML Index</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maven Site Hosting</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Built in Remote Repository Browsing (html)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Built in Remote Repository Browsing (s3)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UI supported import workflow from remote repository</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 With automatic dependency resolution and manual intervention</p></td>
 </tr>
 <tr>
@@ -1421,263 +1428,281 @@ Search</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lucene</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Database metadata indexing</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lucene</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Global Search by any query</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004; <a href="https://www.jfrog.com/confluence/display/RTF/Artifactory+Query+Language">Artifactory Query Language</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong> <a href="https://www.jfrog.com/confluence/display/RTF/Artifactory+Query+Language">Artifactory Query Language</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identify unknown artifact via checksum</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">On the fly indexing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Immediate and transactional</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Scheduled Indexing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Not needed - indexes are always up-to-date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Not needed in most cases, but manual reindex is available in case changes are made directly to storage external to the app)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Search in selected repositories</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Search for non-Maven artifacts</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Indexes any file in any format</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong><br>
 Relies on maven-indexer which only indexes artifacts in Maven format</p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
-<p>&#10004;<br>
+<p><strong class="green">&#10004;</strong><br>
   - maven 2<br>
   - docker<br>
   - nuget<br>
   - raw</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Search for artifacts on Central index</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (1.4-M1)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Uses immediate search in JCenter (superset of Central)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Search for artifacts in Bintray JCenter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Index Publishing for External Consumption</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Only version compliant with all IDEs</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Group Index Publishing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (1.4-M2)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Download Index from Remote Repositories for Local searching and proxying to consumers</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (1.4-M1)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Known Indexes publishing compatible Index: Central, Apache, Java.Net, more here</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Incremental Index Downloads</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (1.4-M1)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Remote repositories only</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Incremental Index Publishing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (1.4-M1)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Remote repositories only</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection to external indexing and impact analysis systems</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
+- JFrog Xray</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Class search</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Includes search for any jar resource, and showing the actual class found</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">GAVC search</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">POM/XML search</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Includes XPath search of any XML metadata.
 No need to customize anything for XML indexing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ivy modules search</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Properties search</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Search custom properties. Attach props to both files and folders via the UI (Pro) or via REST (OSS). No need for custom RDF uploads. Search results are can be manipulated as a bundle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Custom metadata may be attached via the UI, Rest or by uploading an RDF file as part of your build. The metadata is indexed and searchable for files in Maven layout. (Pro)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Group Index Publishing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (1.4-M2)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Reports</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Report for Problem Artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">By default blocks bad poms in runtime instead of polluting your repository and reporting after the fact (policy is configurable via UI)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 RSS Feeds and UI viewer for bad checksums and artifacts with bad poms.
 Bad poms are allowed through by default because many times Maven can still use them. We don&#8217;t believe that simply inserting a repo manager should cause things to suddenly fail from Central. The repo man should for the most part be transparent by default</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Repository Statistics</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Per repository or as a comparison among multiple repositories</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 - Binaries Count<br>
 - Binaries Size<br>
 - Artifacts Size<br>
 - Optimization<br>
 - Items Count<br>
 - Artifacts Count</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004; Binaries Count, Binaries Size</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong> Binaries Count, Binaries Size</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Artifact Statistics</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 - Download count<br>
 - Last downloaded and by whom<br>
 - Deployed by<br>
 - Age</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 - Last Modified<br>
 - Deployed by<br>
 - Age</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 - Last Modified<br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RSS Feeds for New Artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 SS feeds available both for new artifacts in the repository and for newly deployed/discovered versions of a specific artifact</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Feeds for:<br>
 - Newly Proxied Artifacts<br>
 - Newly Deployed Artifacts<br>
 - System Configuration Changes<br>
 - Checksum errors<br>
 - Authentication Events</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Artifact Watching</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Supports watching any repository path for add/remove/update and receiving email notifications (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Audit Logs</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 currently viewable from text file only</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 etailed audit logs for all actions and their sources in access.log</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">External log analytics integration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
+seamless integration with a dedicated app in SumoLogic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>User Interface</strong></p></td>
@@ -1687,7 +1712,7 @@ etailed audit logs for all actions and their sources in access.log</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ajax - Single Page Application - knockoutjs bootstrap</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ajax - uses Apache Wicket</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ExtJs - Ajax</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bootstrap 3.x - Mobile friendly</p></td>
 </tr>
 <tr>
@@ -1695,93 +1720,93 @@ etailed audit logs for all actions and their sources in access.log</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">html and webdav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ajax tree view, simple HTML view and WebDAV</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ext Tree View, html, REST:xml, REST:json</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Viewing of Artifact Information</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 POM information, dependencies, dependency tree and used by; artifact (including pom, sources, javadocs, etc.) can also be downloaded from artifact info page</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 POM view, size, deployed by, age, last downloaded and by whom, times downloaded, dependency info, permissions, metadata and properties, virtual repositories association, actions, builds + build information</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Delete Artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 with a trash can that prevents accidental deletion</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Move Artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
  (via REST Api only)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Move artifacts between repositories + dry-run to check for warnings + auto metadata recalculation. Also available via REST in Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Copy Artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (1.4-M1) via REST api only</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Cheap-copy of artifacts between repositories + dry-run to check for warnings + auto metadata recalculation (no extra space used due to pointer-based storage).<br>
 Copying is often the best approach for exposing the same artifact under different secure locations. Also available via REST in Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Upload Artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 With our without pom (will generate one if needed)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 - With our without pom (will generate one if needed)<br>
 - Upload multiple artifacts in one go<br>
 - Edit the pom before deployment<br>
 - Deploy to arbitrary (non-maven) paths via the UI</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 With our without pom (will generate one if needed)
 Upload multiple artifacts (classifiers) at once</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Upload any binary by form based upload or drag and drop</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Syntax Highlighting</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Syntax highlighting + copy to clipboard support for dozens of known file types directly form the repository (including zip/jar sources)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Jar Browsing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Supports viewing the content of jar files, including show source for class files</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Via a plugin in Pro</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Shows OSGi information for Bundles and Eclipse Features</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dynamic Resources</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Serve dynamic repository content based on textual filtering (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 On the fly creation of:<br>
 - Eclipse Source Bundles from maven source attachments<br>
 - Eclipse Features and Categories<br>
@@ -1792,223 +1817,223 @@ On the fly creation of:<br>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Mount Repositories as WebDAV Shares</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong><br>
 depoyment thru webdav</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Artifact deployment, browsing, moving, copying and deleting over WebDAV mounts, using native file explorers</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Configure deployed plug-ins</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 proxy policies, artifact processors</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Extension points to UI, request processing, scheduling, storage events etc</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Plugins can contribute REST, UI and components</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UI Branding</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Upload or link your logo image + preview, add custom footer text</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Branding with Logo is available (Pro)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Repository Support</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maven 2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maven 1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ivy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Only with Maven layout</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Maven and non-maven layouts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Only with Maven layout</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Only with Maven layout</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Gradle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Only with Maven layout</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Maven and non-maven layouts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Only with Maven layout</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Only with Maven layout</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NuGet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (OSS) searching and custom metadata aren&#8217;t supported</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Yum</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
-(Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
+With GPG signing (Pro)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (OSS)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 With GPG signing</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">P2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)<br>
 Reuses native remote repositories for effective caching and expiry management</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (OSS)<br>
 Uses a separate mirroring mechanism where underlying list of repositories isn&#8217;t under user control</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Based on Maven Tycho deployed meta data or natively extracted</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">npm</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (OSS) browsing, searching and custom metadata aren&#8217;t supported</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 read only</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RubyGems</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (OSS) browsing, searching and custom metadata aren&#8217;t supported</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Opkg</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)<br>
 With GPG signing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CocoaPods</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bower</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Debian packages</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 With GPG signing</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Python Eggs (PyPI)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Docker</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Vagrant (Atlas)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VCS as a Remote Repo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)<br></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Git LFS implementation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)<br>
 Allows storing artifacts in Artifactory and retrive them using Git client API.<br>
 Supports remote and virtual Git LFS repositories and SSH Authentication.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Custom Layouts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Supports any custom layout with the ability to "understand" per layout what is a module. Defaults layouts can be extended in Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 By implementing an adapter plugin</p></td>
 </tr>
 <tr>
@@ -2016,164 +2041,164 @@ By implementing an adapter plugin</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">File System</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Database (configurable) or file system + full system import/export and automated backups</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">File System - Uses Maven repo layout on disk meaning no import or export required to get access to your artifacts</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">File System</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Repository Replication/Syncing</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
  * Supports repository or folder-level replication via rsync-like REST API, including support for syncing deletes and controlling overwrites. Supports scheduled or event-driven push mode and pull mode (in Pro).<br>
  * Supports multi-site pull replication (collecting from multiple remotes) (in Pro) and multi-site push replication (event-driven or scheduled pushing of artifacts to multiple remotes) (in Enterprise)<br>
  * Supports additional features if the remote repository proxies Artifactory – syncronization of properties, statistics, delete notifications, etc.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Smart Proxy enables cache invalidation and pre-emptive fetching between Nexus instances (Pro)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Manual process of export and import</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Store same binary only once</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Artifacts with the same hash are stored a single time, no matter in how many repositories it appears in</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Highly Available Active-Active cluster</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Pro)<br>
 Enterprise-level HA cluster support for zero-downtime deployments and unlimited scalability.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Deploy Artifacts via UI</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Includes snapshots and ability to auto-generate POMs and tweak POMs in the UI before deployment</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 can auto-generate poms.Accepts multiple files in one operation to accept classified/attached artifacts</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Single file Form based or multiple file drag and drop. Can auto-generate POMs.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Deploy Artifact Bundles (multiple artifacts in one go)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">in future plans</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Import local repositories</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Import repositories and separate RELEASE and SNAPSHOT artifacts</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Centrally controlled snapshot policy</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can choose between unique, non-unique (to save space and artifacts clutter) or respect deployer&#8217;s settings</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong><br>
 Respect deployer&#8217;s settings (from the pom)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Artifacts Metadata</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Persistent metadata about artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (1.4-M1)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Download stats (when by whom), original deployer, age</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">User attached custom metadata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 On both files or folders - no need to customize anything</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Searchable custom metadata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Including unique moving, copying &amp; exporting of search results</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Strongly-typed user-defined Properties</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Tag files and folders with you user defined searchable properties via the UI.<br>
 Prop-sets defined through UI as single/multi select or open, with the ability to assign default values, and associated with selected repos (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Custom metadata plugin</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Attach metadata as part of deployment</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Attach metadata during Maven deployment or via simple REST - uploading external documents not required</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Full RDF metadata support</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Schema-less properties</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Any property of any type can be added on-the-fly without any pre-configuration</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Proxy remote metadata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Metadata for remote artifacts on another Artifactory is synced and proxied</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">User-defined metadata on non-maven layout artifacts</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Since Artifactory is not maven-layout centric, metadata can be attached and queried on artifact in any layout</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Security</strong></p></td>
@@ -2183,218 +2208,218 @@ Since Artifactory is not maven-layout centric, metadata can be attached and quer
 <td class="tableblock halign-left valign-top"><p class="tableblock">Redback (database required)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://static.springframework.org/spring-security/site/index.html">Spring Security</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://incubator.apache.org/shiro/">Apache Shiro</a></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">None</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Role Based</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Default Roles</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Supports auto-join roles for newly created users, including ones from external realms</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Users inherit default roles when they sign up</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Viewer, Manager, Admin</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Permissions per repository</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Permissions per subset of repository or individual artifact</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">in future plans</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Administrators per subset of repository</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Authentication by API key</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allow external security</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 via <a href="http://static.springframework.org/spring-security/site/index.html">Spring Security</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 via Shiro realm</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allow external authentication</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 via Spring security or via pluggable realms written in Groovy;<br>
 Atlassian Crowd/JIRA;<br>
 OAuth<br>
  - Google<br>
  - Open ID<br>
  - GitHub Enterprise</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 via Shiro</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Built-in enterprise user management features</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 via intuitive Ajax console</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 via Shiro + ExtJs user console. Full role based with the ability to specify permissions based on the path of the artifact (group/artifact/version) using regex if desired</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Support Prevention of Redeploy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Control over who can populate caches</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Fully featured procurement support included in the pro version. This allows absolute control over the artifacts allowed through based on the artifact and user</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong><br>
 Caches are not supported</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Support Protection of Sources /<br>
 javadoc etc</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Using Ant-like simple to understand patterns + OOTB templates for common include/excludes. Supports inclusion and exclusion so no need to used negative patterns for protecting sources etc</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Using the regex to control the paths, it is possible to secure separately any artifacts you want. Comes configured with targets to specify sources, which would allow you for example to have jars be downloaded anonymously but not the sources, even though they are sitting in the same repository</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Out of the box LDAP support</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong><br>
 partially for authz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Configurable via the web UI</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Including role mappings, Active Directory support and more</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Able to use LDAP groups (authorization from ldap)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Including highly optimized caching and comprehensive UI integration in Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 (Open Sourced in 1.5+)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Supports multiple realms in order (ie LDAP then fallback to internal)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 With control of whether to fallback to internal users or not.<br>
 Including Kerberos and native NTLM in Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 ordered control of cascading though configured realms&#8201;&#8212;&#8201;as many as you have installed</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Atlassian Crowd integration</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Delegate authentication requests to your Crowd server, get transparent SSO in a Crowd-enabled SSO environment, sync and manage permissions for Crowd groups in Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Security integration with Atlassian Crowd provided by Pro plugin</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SAML integration</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 SSO with any SAML IdP (Identity Provider). Artifactory can act as a SAML Service Provider</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Secured settings.xml passwords</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong><br>
 functionality already available in Maven 2.1.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Centrally-controlled encrypted password policy so admins do not have to rely on clients security policy. Auto-generated encrypted passwords can be used in your settings.xml or with non Maven REST clients, such as Ivy, Gradle etc.<br>
 Overcomes Maven drawbacks (including Maven 2.1+) - Maven decrypts the password to clear-text on the client, and keeps a clear-text master password on the filesystem</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Via the <a href="http://blog.sonatype.com/2012/08/securing-repository-credentials-with-nexus-pro-user-tokens">User Token</a> feature. The token is a random api key and is not reversible to your corporate password, even by Nexus administrators. This was co-developed with a stock market that needed higher security than was is available elsewhere</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong><br>
 functionality already available in Maven 2.1.0</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Configuration files protection</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Full encryption of passwords in configuration files</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Encrypted user passwords</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UI for GPG key management</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Client features</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Client settings generation (settings.xml etc.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Out of the box generation of downloadable from the UI Maven&#8217;s settings.xml, Ivy&#8217;s settings.xml and Gradle&#8217;s initial build script</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 with template management</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 provided in automatic help pages for:<br>
 - Debian/APT
 - Eclipse P2<br>
@@ -2403,99 +2428,99 @@ provided in automatic help pages for:<br>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Client settings provisioning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 "Set Me Up" screens with detailed instructions, copy-paste configuration snippets and downloadble configuration files for any repository type.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Maven settings can be templatized and provisioned using Nexus Maven plugin (Pro)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dedicated client plugins</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 All client plugins allow generation of build BOM on any CI server (inc. cloud-based and non-pluggable ones) or without using a CI server. Existing plugins:<br>
 <br>
 - Artifactory Gradle Plugin (with custom DSL)<br>
 - Artifactory Maven Plugin<br>
 - Artifactory MsBuild Plugin (works with and without NuGet dependency management)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Nexus Maven Plugin</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Jenkins Deploy Plugin</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dedicated CLI clients</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 <a href="https://github.com/JFrogDev/artifactory-cli-go">Artifactory CLI client</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>CI Integration</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiple CI servers support</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Supports Jenkins/Hudson, TeamCity and Bamboo with full UI integration and any other CI server (inc. cloud-based and non-pluggable ones) by using Maven/Gradle plugins.<br>
 Supports Microsoft Team Foundation Server (TFS) for working with .NET builds with and without NuGet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Custom Plugin for Jenkins and any other CI server (inc. cloud-based and non-pluggable ones) by using Maven/Gradle plugins.<br>
 Can show build information/links for Hudson and Jenkins</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Trace build environment</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Captures all build environment vars and system properties + CI-server specific vars (build, parent build, agent details etc.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Captures selected build environment vars and links to the builds.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Trace published build artifacts and dependencies</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Captures all published artifacts and effective build dependencies (after final version resolution) from all scopes (including plug-ins) + visual view of per-module artifacts &amp; dependencies in Pro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bi-directional links from/to CI sevrer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can link from any build to its captured build info in Artifactory and from any artifact to the builds it is associated with in the CI server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CI-Build Promotion</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can promote CI builds to target repositories with selective scopes (e.g. promote all artifacts and all compile-time dependencies). Also via REST (Pro)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Optimized Deployment</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Deploys all artifacts in one go only at the end of a successful build (Maven deploys partial modules for a broken multi-module build)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Custom deploy plugin works with Staging to stage locally and deploy/promote at the end of the build</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can deploy zipped P2 repository with server side expansion</p></td>
 </tr>
 <tr>
@@ -2536,29 +2561,29 @@ Can deploy zipped P2 repository with server side expansion</p></td>
 </ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bundled with H2 and non-replaceable</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Database available for querying</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 configurable by datasources. Lucene index and REST api provided for searching</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can be queried, but can also use REST API</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">n/a - Lucene index and REST api provided for searching</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Can run without database</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Use by default an embedded Derby DB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can use file-system storage. Database usage is recommended for fully transactional behavior of metadata not extractable from the artifact file itself</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Uses H2 for metadata, not for artifacts</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Documentation</strong></p></td>
@@ -2607,59 +2632,59 @@ Live browsable and searchable <a href="http://repo.jfrog.org/artifactory/webapp/
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Simple "one-click" push to distribution repository</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Repository Purge</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Snapshot Purge</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 configurable by: retention count, # of days old and if released snapshots are to be deleted</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 configurable by retention count</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 configurable by: retention count, # of days old and if released snapshots are to be deleted</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 configurable by: any meta data field, retention count</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unused Proxy artifact purge</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can evict unused artifacts from the proxy cache to conserve disk space</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Can evict unused artifacts from the proxy cache to conserve disk space</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bulk Removal of Old Module Versions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 Select multiple artifacts across directories, by version and clean them all up in one go, or select any section of the repository tree to delete</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 You can select any section of the repository tree to delete, just like you would do on a file system</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Web Services</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 XMLRPC support in 1.2<br>
-&#10004;<br>
+<strong class="green">&#10004;</strong><br>
 (REST in 1.4-M1)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 <a href="http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API">REST API</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 - full support: The Ajax communicates with the server via REST so all operations are available for Web service integration</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Plugins Available</strong></p></td>
@@ -2759,8 +2784,8 @@ XMLRPC support in 1.2<br>
 </ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://books.sonatype.com/nexus-book/reference/community.html">Full list here</a></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="6"><p class="tableblock"><strong>Commercial Support</strong></p></td>
@@ -2768,10 +2793,10 @@ XMLRPC support in 1.2<br>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Cost<br>
 <span class="small">Each CI server agent and build tool considered a "user"</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 US$2,750 per server for unlimited users on unlimited hardware with <a href="https://www.jfrog.com/registration/quoteaddons.html">Artifactory Pro</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10004;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="green">&#10004;</strong><br>
 - US$1,200 for 10 users included with Nexus Pro<br>
 <br>
 - US$6,000 for 50 users included with Nexus Pro<br>
@@ -2779,24 +2804,24 @@ US$2,750 per server for unlimited users on unlimited hardware with <a href="http
 - US$10,200 for 100 users included with Nexus Pro<br>
 <br>
 All with unlimited servers.</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Trial period for commercial versions</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">30 days. Extensions available on request</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">14 days automatically. Extensions available on request</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Support terms and SLA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">24/7 with 4 hours acknowledgement time</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">24/7 available</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#10008;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>?</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong class="red">&#10008;</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -2805,7 +2830,7 @@ All with unlimited servers.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-07-18 22:32:19 UTC
+Last updated 2016-08-31 22:52:56 UTC
 </div>
 </div>
 </body>
