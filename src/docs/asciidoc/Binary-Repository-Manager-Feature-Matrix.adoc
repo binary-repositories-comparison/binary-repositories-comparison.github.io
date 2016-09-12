@@ -5,7 +5,7 @@ This is the reincarnation of the (now dead) Maven Repository Manager Feature Mat
 
 This page is collaboratively edited by the maintainers of Archiva, Artifactory, Sonatype Nexus, Eclipse Package Drone, and ProGet, making it the most complete, up-to-date and non-biased comparison of Binary Repository Managers.
 
-[frame="all", cols="3,5,5,5,5,5,5,5", options="header"]
+[frame="all", cols="3,5,5,5,5,5,5", options="header"]
 |===
 |Feature |Archiva |Artifactory | Nexus 2 | Nexus 3 |Package Drone |ProGet
 
