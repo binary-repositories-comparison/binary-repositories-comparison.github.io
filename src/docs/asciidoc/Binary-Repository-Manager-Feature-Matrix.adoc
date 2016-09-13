@@ -376,6 +376,7 @@ Not required. ProGet’s Maven metadata.xml is server calculated and is inherent
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |On the fly conversion of M1 to M2
 |[green]*&#10004;* +
@@ -1626,6 +1627,7 @@ a|- available docs: http://books.sonatype.com/nexus-book/3.0/reference/index.htm
 a|-  available docs: https://eclipse.org/package-drone/[project page], https://wiki.eclipse.org/PackageDrone[Wiki], http://packagedrone.org[Blog]
 - live instances: https://packagedrone.eclipse.org[Eclipse], https://thedrone.packagedrone.org[The Drone]
 http://inedo.com/support/documentation/proget[site]
+a|-
 
 
 |*Simple "one-click" push to distribution repository*
