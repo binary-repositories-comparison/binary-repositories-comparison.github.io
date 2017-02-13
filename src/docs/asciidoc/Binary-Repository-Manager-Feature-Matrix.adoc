@@ -1182,6 +1182,36 @@ With GPG signing
 |[red]*&#10008;*
 |[red]*&#10008;*
 
+|NuGet
+|*?*
+|*?*
+|*?*
+|*?*
+|*?*
+|*?*
+|[green]*&#10004;*
+|[green]*&#10004;*
+
+|.NET debugger symbols
+|*?*
+|*?*
+|*?*
+|*?*
+|*?*
+|*?*
+|[green]*&#10004;*
+|[green]*&#10004;*
+
+|VSIX (Visual Studio Extensions)
+|*?*
+|*?*
+|*?*
+|*?*
+|*?*
+|*?*
+|*?*
+|[green]*&#10004;*
+
 |Git LFS implementation
 |[red]*&#10008;*
 |[green]*&#10004;* +
