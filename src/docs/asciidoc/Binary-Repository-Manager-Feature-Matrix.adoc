@@ -996,7 +996,7 @@ read only
 (Pro)
 |[green]*&#10004;* +
 (OSS) browsing, searching and custom metadata aren't supported
-|*?*
+|[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 
@@ -1042,7 +1042,7 @@ With GPG signing
 |[green]*&#10004;* +
 (Pro)
 |[red]*&#10008;*
-|[red]*&#10008;*
+|[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 
