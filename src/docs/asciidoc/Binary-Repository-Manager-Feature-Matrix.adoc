@@ -3,11 +3,11 @@
 == (formerly known as Maven Repository Manager Feature Matrix)
 This is the reincarnation of the (now dead) Maven Repository Manager Feature Matrix (http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix) It picks up exactly where the old doc left it.
 
-This page is collaboratively edited by the maintainers of Archiva, Artifactory, Sonatype Nexus, Eclipse Package Drone, ProGet and MyGet, making it the most complete, up-to-date and non-biased comparison of Binary Repository Managers.
+This page is collaboratively edited by the maintainers of Archiva, Artifactory, CloudRepo, Sonatype Nexus, Eclipse Package Drone, ProGet and MyGet, making it the most complete, up-to-date and non-biased comparison of Binary Repository Managers.
 
-[frame="all", cols="3,5,5,5,5,5,5,5", options="header"]
+[frame="all", cols="3,5,5,5,5,5,5,5,5", options="header"]
 |===
-|Feature |Archiva |Artifactory | Nexus 2 | Nexus 3 |Package Drone |ProGet|MyGet
+|Feature |Archiva |Artifactory | CloudRepo | Nexus 2 | Nexus 3 |Package Drone |ProGet|MyGet
 
 |*Screenshots*
 |image:archiva0.png[Archiva0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/archiva0.png?raw=true"] +
@@ -17,7 +17,7 @@ image:archiva1.png[Archiva1, width="100%", link="https://github.com/binary-repos
 |image:artifactory0.png[Artifactory0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory0.png?raw=true"] +
  +
 image:artifactory1.png[Artifactory1, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/artifactory1.png?raw=true"]
-
+|image:cloudrepo0.png[CloudRepo0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/cloudrepo0.png?raw=true"]
 |image:nexus0.png[Nexus0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus0.png?raw=true"] +
  +
 image:nexus1.png[Nexus0, width="100%", link="https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/images/nexus1.png?raw=true"]
@@ -36,6 +36,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 |*Latest Version*
 |2.0.1
 |4.11.2
+|1.0
 |2.11.2
 |3.0
 |0.12.1
@@ -47,6 +48,7 @@ image:pdrone1.png[PackageDrone1, width="100%", link="https://github.com/binary-r
 |https://www.jfrog.com/confluence/display/RTF/Release+Notes[New Releases History (Bintray)] +
  +
 http://sourceforge.net/project/showfiles.php?group_id=175347&package_id=201243[Early Releases History (SourceForge)]
+|https://www.cloudrepo.io/release-notes.html[Release History]
 |http://links.sonatype.com/products/nexus/pro/release-notes[Release History]
 |https://support.sonatype.com/hc/en-us/sections/203012688-Release-Notes[Release History]
 |https://projects.eclipse.org/projects/technology.package-drone[Release History] +
@@ -59,6 +61,7 @@ https://github.com/ctron/package-drone/releases[Early Release History (GitHub)]
 |All versions: Apache License 2.0
 |Lesser GNU General Public License 3.0 (up to v4.8.1) +
 GNU Affero General Public License 3.0 (from v4.8.1)
+|https://www.cloudrepo.io/tos.html[Proprietary]
 |Eclipse Public License Version 1.0
 |Eclipse Public License Version 1.0
 |Eclipse Public License Version 1.0
@@ -77,7 +80,7 @@ a|
   - http://repository.cloudera.com/cloudera/webapp/home.html[Cloudera] +
   - http://jaspersoft.artifactoryonline.com/jaspersoft/[JasperSoft] +
   - http://repo.jfrog.org/artifactory/webapp/home.html[Repo@JFrog]
-
+ |[red]*&#10008;*
  a| - http://maven.alfresco.com/nexus[Alfresco] +
   - http://repository.apache.org/[Apache] +
   - http://maven.atlassian.com/[Atlassian] +
@@ -93,18 +96,16 @@ a|
  - https://www.myget.org[www.myget.org] +
   - https://dotnet.myget.org[dotnet.myget.org]
 
-   8+|*Deployment*
+9+|*Deployment*
 
-
-   |Standalone
-
-   |[green]*&#10004;* +
+|Standalone
+|[green]*&#10004;* +
    Embedded Jetty. JSW launch scripts - runs as a service on windows and unix
 
    |[green]*&#10004;* +
    Bundled Tomcat - runs as a service on Windows and Unix. Complete script for installation as a service on unix, includes: user creation, permission settings and service config.
 Complete script for installing a standalone Tomcat service on Unix.
-
+   |[red]*&#10008;*
    |[green]*&#10004;* +
    Embedded Jetty. JSW launch scripts - runs as a service on windows and unix. Also Native Solaris Service Manager Scripts.
 
@@ -120,6 +121,7 @@ Complete script for installing a standalone Tomcat service on Unix.
    |[green]*&#10004;*
    |[green]*&#10004;* +
    "Drop the War" - deploy into existing Tomcat installation with zero configuration.
+   |[red]*&#10008;*
    |[green]*&#10004;* +
    no container configuration required to run the war.
    |[red]*&#10008;*
@@ -128,9 +130,7 @@ Complete script for installing a standalone Tomcat service on Unix.
    |[red]*&#10008;*
 
 |OS packages
-
 |*?*
-
 a| - RPM for installing on YUM-enabled OSes.
   - Debian package
   - Debian distribution for Xenial (Ubuntu 16.04)
@@ -139,41 +139,33 @@ a| - RPM for installing on YUM-enabled OSes.
     * Windows
     * OS X
     * Linux
-
+|[red]*&#10008;*
 |*?*
-
 a| - Windows
   - Mac
   - Linux
-
 a| - RPM/YUM for CentOS/RHEL 6/7
   - RPM for openSUSE 13.x+
   - DEB/APT for Ubuntu 14.04+
-
 a| - Windows Installer
   - Linux Docker (beta)
-
 |[red]*&#10008;*
+
 
 |Cloud-based SaaS
-
 |[red]*&#10008;*
-
 |[green]*&#10004;* +
 http://www.jfrog.com/home/v_artifactorycloud_overview[Artifactory Online] - private Artifactory instance in the cloud with full self service, pay-per-use model and always up-to-date with all the latest features
-
+|[green]*&#10004;* +
+https://www.cloudrepo.io[CloudRepo] - 100% Cloud Based, Fully Managed, Artifact Repository.
 |[red]*&#10008;*
-
 |[red]*&#10008;*
-
 |[green]*&#10004;* +
 https://hub.openshift.com/quickstarts/90-package-drone[OpenShift Quickstart] - private Package Drone instance in the cloud with full self service
-
 |[red]*&#10008;*
-
 |[green]*&#10004;* http://www.myget.org/plans[Pricing] + http://www.myget.org/enterprise[Enterprise plan]
 
-8+|*Artifacts and Metadata Storage*
+9+|*Artifacts and Metadata Storage*
 
 |Artifacts storage
 |Filesystem
@@ -185,6 +177,7 @@ a| - Filesystem +
  - Amazon S3 storage +
  - https://www.jfrog.com/confluence/display/RTF/S3+Object+Storage[Cached S3 and compatible] storage (Enterprise) +
  with support of server side encryption
+|Amazon S3
 |Filesystem
 |File system-based blob storage
 |Filesystem
@@ -200,23 +193,27 @@ a| - Filesystem +
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Metadata storage
 |Filesystem
 |Indexed and querible database
+|Amazon S3
 |Filesystem
 |ravendb (not replacable)
 |Filesystem
 |SQL Server (Windows) / Postgres (Linux)
 |Microsoft Azure (hosted)
 
-8+|*Configuration*
+9+|*Configuration*
 
 |UI configurable
 |[green]*&#10004;* +
 Partially
 |[green]*&#10004;* +
 Fully configurable via Ajax UI with extensive online help, or REST API
+|[green]*&#10004;* +
+Fully configurable via https://admin.cloudrepo.io[Web Based Admin Console].
 |[green]*&#10004;* +
 100% configuration with Ajax UI or REST API
 |
@@ -229,18 +226,20 @@ Fully configurable via Ajax UI with extensive online help, or REST API
 |Config Storage
 |XML
 |Database, with XML import/export
+|Cloud Based
 |h2 embedded database, XML and other files
 |ravendb database (not exportable)
 |Filesystem
 |Database,Filesystem
 |Microsoft Azure (hosted)
 
-8+|*Extensibility/ +
+9+|*Extensibility/ +
 Orthogonality*
 
 |IOC
 |Spring
 |Spring
+|[red]*&#10008;*
 |Google Guice
 |[red]*&#10008;*
 |OSGi
@@ -252,6 +251,7 @@ Orthogonality*
 Partially (with 1.4-M1)
 |[green]*&#10004;* +
 Extensive coverage. Document-first design (not UI coupled, so changes in UI do not break existing REST clients). Uses Jersey. Can be used via strongly-typed Java API. Supports WADL.
+|[green]*&#10004;*
 |[green]*&#10004;* +
 Uses Restlet.org servlet. UI communicates with server via REST to ensure 100% api support
 |[red]*&#10008;*
@@ -264,6 +264,7 @@ Uses Restlet.org servlet. UI communicates with server via REST to ensure 100% ap
 |[green]*&#10004;* +
 Extensible with custom Groovy plugins - schedule tasks, deploy artifacts, change resolution rules and download content, tend to any storage events etc.
 Plugin source files are redeployed on the fly during development and can be edited and debugged in your favorite IDE.
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Fully extensible across the core components, REST API and UI. See the book and this post for more info.
 |[red]*&#10008;*
@@ -272,9 +273,10 @@ Backed by OSGI and Eclipse P2
 |[green]*&#10004;*
 |[red]*&#10008;*
 
-8+|*Proxying and Cache*
+9+|*Proxying and Cache*
 
 |Hosted Repositories
+|[green]*&#10004;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 |[green]*&#10004;*
@@ -286,6 +288,7 @@ Backed by OSGI and Eclipse P2
 |Proxy Repositories
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 |[red]*&#10008;*
@@ -295,6 +298,7 @@ Backed by OSGI and Eclipse P2
 |Aggregate Repositories into single logical repo
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 |[red]*&#10008;*
@@ -304,6 +308,7 @@ Backed by OSGI and Eclipse P2
 |Nest and reuse Repository Groups
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 |[red]*&#10008;*
@@ -313,6 +318,7 @@ Backed by OSGI and Eclipse P2
 |Groups can contain other groups
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -322,17 +328,19 @@ Backed by OSGI and Eclipse P2
 |Inclusion/exclusion rules per remote proxy
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 
-8+|*Checksum checking*
+9+|*Checksum checking*
 
 |fix bad checksums
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -342,6 +350,7 @@ Backed by OSGI and Eclipse P2
 |block bad checksums
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -351,6 +360,7 @@ Backed by OSGI and Eclipse P2
 |ignore bad checksums
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -360,6 +370,7 @@ Backed by OSGI and Eclipse P2
 |repair hosted checksums
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -369,6 +380,7 @@ Backed by OSGI and Eclipse P2
 |calculate missing checksums
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -378,6 +390,7 @@ Backed by OSGI and Eclipse P2
 |validate client-side checksums
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -392,11 +405,13 @@ Backed by OSGI and Eclipse P2
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Maven Metadata.xml repair
 |[green]*&#10004;*
 |[green]*&#10004;* +
 Not required. Artifactory's Maven metadata.xml is server calculated and is inherently up-to-date.
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[green]*&#10004;* +
@@ -414,11 +429,13 @@ Not required. MyGet’s Maven metadata.xml is server calculated and is inherentl
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |On the fly conversion of M1 to M2
 |[green]*&#10004;* +
 with custom mappings for ambiguous paths
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -428,6 +445,7 @@ with custom mappings for ambiguous paths
 |On the fly conversion of M2 to M1
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -438,6 +456,7 @@ with custom mappings for ambiguous paths
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Can download jars in parallel as soon as poms are requested, and sources in parallel when jars are requested.
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -453,11 +472,13 @@ Share remote repository definitions and import preconfigured definitions for mos
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Eclipse Update Site Proxying
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Pro
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -468,6 +489,7 @@ Pro
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Pro
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -475,6 +497,7 @@ Pro
 |[red]*&#10008;*
 
 |OBR (OSGI Bundle Repository)
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -486,6 +509,7 @@ Pro
 |OSGI R5 XML Index
 |*?*
 |*?*
+|[red]*&#10008;*
 |*?*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -495,6 +519,7 @@ Pro
 |Maven Site Hosting
 |[red]*&#10008;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -504,6 +529,7 @@ Pro
 |Built in Remote Repository Browsing (html)
 |[red]*&#10008;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -513,6 +539,7 @@ Pro
 |Built in Remote Repository Browsing (s3)
 |[red]*&#10008;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -522,6 +549,7 @@ Pro
 |UI supported import workflow from remote repository
 |*?*
 |*?*
+|[red]*&#10008;*
 |*?*
 |[red]*&#10008;*
 |[green]*&#10004;* +
@@ -529,12 +557,13 @@ With automatic dependency resolution and manual intervention
 |[red]*&#10008;*
 |[red]*&#10008;*
 
-8+|*Indexing/ +
+9+|*Indexing/ +
 Search*
 
 |Index Format
 |Lucene
 |Database metadata indexing
+|[red]*&#10008;*
 |Lucene
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -549,10 +578,12 @@ Search*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Identify unknown artifact via checksum
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 |[red]*&#10008;*
@@ -563,6 +594,7 @@ Search*
 |[green]*&#10004;*
 |[green]*&#10004;* +
 Immediate and transactional
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -573,6 +605,7 @@ Immediate and transactional
 |[green]*&#10004;*
 |[green]*&#10004;* +
 Not needed - indexes are always up-to-date
+|[red]*&#10008;*
 |[green]*&#10004;* +
 (Not needed in most cases, but manual reindex is available in case changes are made directly to storage external to the app)
 |[red]*&#10008;*
@@ -583,6 +616,7 @@ Not needed - indexes are always up-to-date
 |Search in selected repositories
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -593,6 +627,7 @@ Not needed - indexes are always up-to-date
 |*?*
 |[green]*&#10004;* +
 Indexes any file in any format
+|[red]*&#10008;*
 |[red]*&#10008;* +
 Relies on maven-indexer which only indexes artifacts in Maven format
 a| [green]*&#10004;* +
@@ -609,6 +644,7 @@ a| [green]*&#10004;* +
 (1.4-M1)
 |[green]*&#10004;* +
 Uses immediate search in JCenter (superset of Central)
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 |[red]*&#10008;*
@@ -623,10 +659,12 @@ Uses immediate search in JCenter (superset of Central)
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Index Publishing for External Consumption
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Only version compliant with all IDEs
 |[red]*&#10008;*
@@ -638,6 +676,7 @@ Only version compliant with all IDEs
 |[green]*&#10004;* +
 (1.4-M2)
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -648,6 +687,7 @@ Only version compliant with all IDEs
 |[green]*&#10004;* +
 (1.4-M1)
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Known Indexes publishing compatible Index: Central, Apache, Java.Net, more here
 |[red]*&#10008;*
@@ -659,6 +699,7 @@ Known Indexes publishing compatible Index: Central, Apache, Java.Net, more here
 |[green]*&#10004;* +
 (1.4-M1)
 |Remote repositories only
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -669,6 +710,7 @@ Known Indexes publishing compatible Index: Central, Apache, Java.Net, more here
 |[green]*&#10004;* +
 (1.4-M1)
 |Remote repositories only
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -684,11 +726,13 @@ Known Indexes publishing compatible Index: Central, Apache, Java.Net, more here
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Class search
 |[green]*&#10004;*
 |[green]*&#10004;* +
 Includes search for any jar resource, and showing the actual class found
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -698,6 +742,7 @@ Includes search for any jar resource, and showing the actual class found
 |GAVC search
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -714,10 +759,12 @@ No need to customize anything for XML indexing
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Ivy modules search
 |[red]*&#10008;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -728,6 +775,7 @@ No need to customize anything for XML indexing
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Search custom properties. Attach props to both files and folders via the UI (Pro) or via REST (OSS). No need for custom RDF uploads. Search results are can be manipulated as a bundle
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Custom metadata may be attached via the UI, Rest or by uploading an RDF file as part of your build. The metadata is indexed and searchable for files in Maven layout. (Pro)
 |[red]*&#10008;*
@@ -739,17 +787,19 @@ Custom metadata may be attached via the UI, Rest or by uploading an RDF file as 
 |[green]*&#10004;* +
 (1.4-M2)
 |*?*
+|[red]*&#10008;*
 |*?*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 
-8+|*Reports*
+9+|*Reports*
 
 |Report for Problem Artifacts
 |[green]*&#10004;*
 |By default blocks bad poms in runtime instead of polluting your repository and reporting after the fact (policy is configurable via UI)
+|[red]*&#10008;*
 |[green]*&#10004;* +
 RSS Feeds and UI viewer for bad checksums and artifacts with bad poms.
 Bad poms are allowed through by default because many times Maven can still use them. We don't believe that simply inserting a repo manager should cause things to suddenly fail from Central. The repo man should for the most part be transparent by default
@@ -770,6 +820,7 @@ Per repository or as a comparison among multiple repositories
 - Artifacts Count
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |[green]*&#10004;* Binaries Count, Binaries Size
 |[green]*&#10004;*
 |[green]*&#10004;*
@@ -781,6 +832,7 @@ Per repository or as a comparison among multiple repositories
 - Last downloaded and by whom +
 - Deployed by +
 - Age
+|[red]*&#10008;*
 |[green]*&#10004;* +
 - Last Modified +
 - Deployed by +
@@ -794,6 +846,7 @@ Per repository or as a comparison among multiple repositories
 |RSS Feeds for New Artifacts
 |[green]*&#10004;* +
 SS feeds available both for new artifacts in the repository and for newly deployed/discovered versions of a specific artifact
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Feeds for: +
@@ -816,12 +869,14 @@ Supports watching any repository path for add/remove/update and receiving email 
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Audit Logs
 |[green]*&#10004;* +
 currently viewable from text file only
 |[green]*&#10004;* +
 etailed audit logs for all actions and their sources in access.log
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -837,12 +892,14 @@ seamless integration with a dedicated app in SumoLogic
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
-8+|*User Interface*
+9+|*User Interface*
 
 |UI Technology
 |Ajax - Single Page Application - knockoutjs bootstrap
 |Ajax - uses Apache Wicket
+|Ajax - uses Angular 2
 |ExtJs - Ajax
 |*?*
 |Bootstrap 3.x - Mobile friendly
@@ -852,6 +909,7 @@ seamless integration with a dedicated app in SumoLogic
 |Repository Browsing
 |html and webdav
 |Ajax tree view, simple HTML view and WebDAV
+|[red]*&#10008;*
 |Ext Tree View, html, REST:xml, REST:json
 |*?*
 |HTML
@@ -863,6 +921,7 @@ seamless integration with a dedicated app in SumoLogic
 POM information, dependencies, dependency tree and used by; artifact (including pom, sources, javadocs, etc.) can also be downloaded from artifact info page
 |[green]*&#10004;* +
 POM view, size, deployed by, age, last downloaded and by whom, times downloaded, dependency info, permissions, metadata and properties, virtual repositories association, actions, builds + build information
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[green]*&#10004;*
@@ -873,6 +932,7 @@ POM view, size, deployed by, age, last downloaded and by whom, times downloaded,
 |[green]*&#10004;*
 |[green]*&#10004;* +
 with a trash can that prevents accidental deletion
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[green]*&#10004;*
@@ -889,6 +949,7 @@ Move artifacts between repositories + dry-run to check for warnings + auto metad
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Copy Artifacts
 |[green]*&#10004;* +
@@ -896,6 +957,7 @@ Move artifacts between repositories + dry-run to check for warnings + auto metad
 |[green]*&#10004;* +
 Cheap-copy of artifacts between repositories + dry-run to check for warnings + auto metadata recalculation (no extra space used due to pointer-based storage). +
 Copying is often the best approach for exposing the same artifact under different secure locations. Also available via REST in Pro
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -910,6 +972,7 @@ With our without pom (will generate one if needed)
 - Upload multiple artifacts in one go +
 - Edit the pom before deployment +
 - Deploy to arbitrary (non-maven) paths via the UI
+|[green]*&#10004;*
 |[green]*&#10004;* +
 With our without pom (will generate one if needed)
 Upload multiple artifacts (classifiers) at once
@@ -927,12 +990,14 @@ Syntax highlighting + copy to clipboard support for dozens of known file types d
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 
 |Jar Browsing
 |[green]*&#10004;*
 |[green]*&#10004;* +
 Supports viewing the content of jar files, including show source for class files
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Via a plugin in Pro
 |[red]*&#10008;*
@@ -945,6 +1010,7 @@ Shows OSGi information for Bundles and Eclipse Features
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Serve dynamic repository content based on textual filtering (Pro)
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;* +
@@ -966,12 +1032,14 @@ Artifact deployment, browsing, moving, copying and deleting over WebDAV mounts, 
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Configure deployed plug-ins
 |[green]*&#10004;* +
 proxy policies, artifact processors
 |[green]*&#10004;* +
 Extension points to UI, request processing, scheduling, storage events etc
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Plugins can contribute REST, UI and components
 |[red]*&#10008;*
@@ -983,6 +1051,7 @@ Plugins can contribute REST, UI and components
 |[green]*&#10004;*
 |[green]*&#10004;* +
 Upload or link your logo image + preview, add custom footer text
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Branding with Logo is available (Pro)
 |[red]*&#10008;*
@@ -990,9 +1059,10 @@ Branding with Logo is available (Pro)
 |[red]*&#10008;*
 |[red]*&#10008;* (custom logo supported in Enterprise plan)
 
-8+|*Repository Support*
+9+|*Repository Support*
 
 |Maven 2
+|[green]*&#10004;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 |[green]*&#10004;*
@@ -1004,6 +1074,7 @@ Branding with Logo is available (Pro)
 |Maven 1
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[red]*&#10008;*
@@ -1015,6 +1086,8 @@ Branding with Logo is available (Pro)
 Only with Maven layout
 |[green]*&#10004;* +
 Maven and non-maven layouts
+|[green]*&#10004;* +
+Only with Maven layout
 |[green]*&#10004;* +
 Only with Maven layout
 |*?*
@@ -1032,6 +1105,8 @@ Only with Maven layout
 Maven and non-maven layouts
 |[green]*&#10004;* +
 Only with Maven layout
+|[green]*&#10004;* +
+Only with Maven layout
 |*?*
 |[green]*&#10004;* +
 Only with Maven layout
@@ -1045,6 +1120,7 @@ Only with Maven layout
 |[red]*&#10008;*
 |[green]*&#10004;* +
 (Pro)
+|[green]*&#10004;*
 |[green]*&#10004;* +
 (OSS) searching and custom metadata aren't supported
 |[green]*&#10004;*
@@ -1056,6 +1132,7 @@ Only with Maven layout
 |[red]*&#10008;*
 |[green]*&#10004;* +
 With GPG signing (Pro)
+|[red]*&#10008;*
 |[green]*&#10004;* +
 (OSS)
 |*?*
@@ -1069,6 +1146,7 @@ With GPG signing
 |[green]*&#10004;* +
 (Pro) +
 Reuses native remote repositories for effective caching and expiry management
+|[red]*&#10008;*
 |[green]*&#10004;* +
 (OSS) +
 Uses a separate mirroring mechanism where underlying list of repositories isn't under user control
@@ -1082,6 +1160,7 @@ Based on Maven Tycho deployed meta data or natively extracted
 |[red]*&#10008;*
 |[green]*&#10004;* +
 (Pro)
+|[red]*&#10008;*
 |[green]*&#10004;* +
 (OSS) browsing, searching and custom metadata aren't supported
 |[green]*&#10004;*
@@ -1094,6 +1173,7 @@ read only
 |[red]*&#10008;*
 |[green]*&#10004;* +
 (Pro)
+|[red]*&#10008;*
 |[green]*&#10004;* +
 (OSS) browsing, searching and custom metadata aren't supported
 |[green]*&#10004;*
@@ -1108,6 +1188,7 @@ read only
 With GPG signing
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |*?*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -1115,6 +1196,7 @@ With GPG signing
 |CocoaPods
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |*?*
@@ -1125,6 +1207,7 @@ With GPG signing
 |*?*
 |[green]*&#10004;* +
 (Pro)
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
@@ -1137,6 +1220,7 @@ With GPG signing
 (Pro)
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |[green]*&#10004;* +
 With GPG signing
 |[red]*&#10008;*
@@ -1147,6 +1231,7 @@ With GPG signing
 |[green]*&#10004;* +
 (Pro)
 |[red]*&#10008;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -1156,6 +1241,7 @@ With GPG signing
 |[red]*&#10008;*
 |[green]*&#10004;* +
 (Pro)
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;*
 |[red]*&#10008;*
@@ -1171,6 +1257,7 @@ With GPG signing
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |VCS as a Remote Repo
 |[red]*&#10008;*
@@ -1181,31 +1268,22 @@ With GPG signing
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
-
-|NuGet
-|*?*
-|*?*
-|*?*
-|*?*
-|*?*
-|*?*
-|[green]*&#10004;*
-|[green]*&#10004;*
+|[red]*&#10008;*
 
 |.NET debugger symbols
 |*?*
 |*?*
+|[red]*&#10008;*
 |*?*
 |*?*
 |*?*
 |*?*
-|[green]*&#10004;*
 |[green]*&#10004;*
 
 |VSIX (Visual Studio Extensions)
 |*?*
 |*?*
-|*?*
+|[red]*&#10008;*
 |*?*
 |*?*
 |*?*
@@ -1223,11 +1301,13 @@ Supports remote and virtual Git LFS repositories and SSH Authentication.
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Custom Layouts
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Supports any custom layout with the ability to "understand" per layout what is a module. Defaults layouts can be extended in Pro
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;* +
@@ -1238,6 +1318,7 @@ By implementing an adapter plugin
 |Repository Storage
 |File System
 |Database (configurable) or file system + full system import/export and automated backups
+|AWS S3
 |File System - Uses Maven repo layout on disk meaning no import or export required to get access to your artifacts
 |*?*
 |File System
@@ -1250,6 +1331,7 @@ By implementing an adapter plugin
  * Supports repository or folder-level replication via rsync-like REST API, including support for syncing deletes and controlling overwrites. Supports scheduled or event-driven push mode and pull mode (in Pro). +
  * Supports multi-site pull replication (collecting from multiple remotes) (in Pro) and multi-site push replication (event-driven or scheduled pushing of artifacts to multiple remotes) (in Enterprise) +
  * Supports additional features if the remote repository proxies Artifactory – syncronization of properties, statistics, delete notifications, etc.
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Smart Proxy enables cache invalidation and pre-emptive fetching between Nexus instances (Pro)
 |*?*
@@ -1264,6 +1346,7 @@ Manual process of export and import
 Artifacts with the same hash are stored a single time, no matter in how many repositories it appears in
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;* +
 using differential storage
@@ -1274,6 +1357,7 @@ using differential storage
 |[green]*&#10004;* +
 (Pro) +
 Enterprise-level HA cluster support for zero-downtime deployments and unlimited scalability.
+|[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -1285,6 +1369,7 @@ Enterprise-level HA cluster support for zero-downtime deployments and unlimited 
 |[green]*&#10004;*
 |[green]*&#10004;* +
 Includes snapshots and ability to auto-generate POMs and tweak POMs in the UI before deployment
+|[red]*&#10008;*
 |[green]*&#10004;* +
 can auto-generate poms.Accepts multiple files in one operation to accept classified/attached artifacts
 |*?*
@@ -1297,6 +1382,7 @@ Single file Form based or multiple file drag and drop. Can auto-generate POMs.
 |in future plans
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |*?*
 |[red]*&#10008;*
 |[green]*&#10004;*
@@ -1305,6 +1391,7 @@ Single file Form based or multiple file drag and drop. Can auto-generate POMs.
 |Import local repositories
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[red]*&#10008;*
@@ -1314,6 +1401,7 @@ Single file Form based or multiple file drag and drop. Can auto-generate POMs.
 |Import repositories and separate RELEASE and SNAPSHOT artifacts
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[red]*&#10008;*
@@ -1324,6 +1412,7 @@ Single file Form based or multiple file drag and drop. Can auto-generate POMs.
 |*?*
 |[green]*&#10004;* +
 Can choose between unique, non-unique (to save space and artifacts clutter) or respect deployer's settings
+|[red]*&#10008;*
 |[red]*&#10008;* +
 Respect deployer's settings (from the pom)
 |[red]*&#10008;*
@@ -1331,13 +1420,14 @@ Respect deployer's settings (from the pom)
 |[red]*&#10008;*
 |[red]*&#10008;*
 
-8+|*Artifacts Metadata*
+9+|*Artifacts Metadata*
 
 |Persistent metadata about artifacts
 |[green]*&#10004;* +
 (1.4-M1)
 |[green]*&#10004;* +
 Download stats (when by whom), original deployer, age
+|[green]*&#10004;*
 |[green]*&#10004;*
 |*?*
 |[green]*&#10004;*
@@ -1349,6 +1439,7 @@ Download stats (when by whom), original deployer, age
 |[green]*&#10004;* +
 On both files or folders - no need to customize anything
 |[green]*&#10004;*
+|[green]*&#10004;*
 |*?*
 |[green]*&#10004;*
 |[green]*&#10004;*
@@ -1358,6 +1449,7 @@ On both files or folders - no need to customize anything
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Including unique moving, copying & exporting of search results
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[red]*&#10008;*
@@ -1369,6 +1461,7 @@ Including unique moving, copying & exporting of search results
 |[green]*&#10004;* +
 Tag files and folders with you user defined searchable properties via the UI. +
 Prop-sets defined through UI as single/multi select or open, with the ability to assign default values, and associated with selected repos (Pro)
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Custom metadata plugin
 |[red]*&#10008;*
@@ -1380,6 +1473,7 @@ Custom metadata plugin
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Attach metadata during Maven deployment or via simple REST - uploading external documents not required
+|[green]*&#10004;*
 |[green]*&#10004;* +
 Full RDF metadata support
 |*?*
@@ -1393,6 +1487,7 @@ Full RDF metadata support
 Any property of any type can be added on-the-fly without any pre-configuration
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 |[red]*&#10008;*
@@ -1404,6 +1499,7 @@ Metadata for remote artifacts on another Artifactory is synced and proxied
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;*
 
@@ -1412,16 +1508,19 @@ Metadata for remote artifacts on another Artifactory is synced and proxied
 |[green]*&#10004;* +
 Since Artifactory is not maven-layout centric, metadata can be attached and queried on artifact in any layout
 |[red]*&#10008;*
+|[red]*&#10008;*
 |*?*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 
-8+|*Security*
+9+|*Security*
 
 |Framework
 |Redback (database required)
 |http://static.springframework.org/spring-security/site/index.html[Spring Security]
+|Encryption at Rest +
+Passwords Hashed and Salted
 |http://incubator.apache.org/shiro/[Apache Shiro]
 |*?*
 |None
@@ -1431,6 +1530,7 @@ Since Artifactory is not maven-layout centric, metadata can be attached and quer
 |Role Based
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[red]*&#10008;*
@@ -1441,6 +1541,7 @@ Since Artifactory is not maven-layout centric, metadata can be attached and quer
 |*?*
 |[green]*&#10004;* +
 Supports auto-join roles for newly created users, including ones from external realms
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Users inherit default roles when they sign up
 |*?*
@@ -1454,6 +1555,7 @@ Owner, Co-Owner, Publisher, Publisher (limited), Consumer
 |Permissions per repository
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[red]*&#10008;*
@@ -1463,6 +1565,7 @@ Owner, Co-Owner, Publisher, Publisher (limited), Consumer
 |Permissions per subset of repository or individual artifact
 |in future plans
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[red]*&#10008;*
@@ -1472,6 +1575,7 @@ Owner, Co-Owner, Publisher, Publisher (limited), Consumer
 |Administrators per subset of repository
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[red]*&#10008;*
@@ -1481,6 +1585,7 @@ Owner, Co-Owner, Publisher, Publisher (limited), Consumer
 |Authentication by API key
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |*?*
 |*?*
 |*?*
@@ -1491,6 +1596,7 @@ Owner, Co-Owner, Publisher, Publisher (limited), Consumer
 |[red]*&#10008;*
 |[green]*&#10004;* +
 via http://static.springframework.org/spring-security/site/index.html[Spring Security]
+|[red]*&#10008;*
 |[green]*&#10004;* +
 via Shiro realm
 |*?*
@@ -1507,6 +1613,7 @@ OAuth +
  - Google +
  - Open ID +
  - GitHub Enterprise
+|[red]*&#10008;*
 |[green]*&#10004;* +
 via Shiro
 |*?*
@@ -1518,6 +1625,7 @@ via Shiro
 |[green]*&#10004;*
 |[green]*&#10004;* +
 via intuitive Ajax console
+|[green]*&#10004;*
 |[green]*&#10004;* +
 via Shiro + ExtJs user console. Full role based with the ability to specify permissions based on the path of the artifact (group/artifact/version) using regex if desired
 |*?*
@@ -1528,6 +1636,7 @@ via Shiro + ExtJs user console. Full role based with the ability to specify perm
 |Support Prevention of Redeploy
 |[green]*&#10004;*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |*?*
 |[green]*&#10004;*
@@ -1537,6 +1646,7 @@ via Shiro + ExtJs user console. Full role based with the ability to specify perm
 |Control over who can populate caches
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Fully featured procurement support included in the pro version. This allows absolute control over the artifacts allowed through based on the artifact and user
 |*?*
@@ -1550,6 +1660,7 @@ javadoc etc
 |*?*
 |[green]*&#10004;* +
 Using Ant-like simple to understand patterns + OOTB templates for common include/excludes. Supports inclusion and exclusion so no need to used negative patterns for protecting sources etc
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Using the regex to control the paths, it is possible to secure separately any artifacts you want. Comes configured with targets to specify sources, which would allow you for example to have jars be downloaded anonymously but not the sources, even though they are sitting in the same repository
 |*?*
@@ -1562,6 +1673,7 @@ Using the regex to control the paths, it is possible to secure separately any ar
 partially for authz
 |[green]*&#10004;* +
 Configurable via the web UI
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Including role mappings, Active Directory support and more
 |*?*
@@ -1573,6 +1685,7 @@ Including role mappings, Active Directory support and more
 |*?*
 |[green]*&#10004;* +
 Including highly optimized caching and comprehensive UI integration in Pro
+|[red]*&#10008;*
 |[green]*&#10004;* +
 (Open Sourced in 1.5+)
 |*?*
@@ -1585,6 +1698,7 @@ Including highly optimized caching and comprehensive UI integration in Pro
 |[green]*&#10004;* +
 With control of whether to fallback to internal users or not. +
 Including Kerberos and native NTLM in Pro
+|[red]*&#10008;*
 |[green]*&#10004;* +
 ordered control of cascading though configured realms -- as many as you have installed
 |*?*
@@ -1596,6 +1710,7 @@ ordered control of cascading though configured realms -- as many as you have ins
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Delegate authentication requests to your Crowd server, get transparent SSO in a Crowd-enabled SSO environment, sync and manage permissions for Crowd groups in Pro
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Security integration with Atlassian Crowd provided by Pro plugin
 |*?*
@@ -1610,6 +1725,7 @@ SSO with any SAML IdP (Identity Provider). Artifactory can act as a SAML Service
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |[green]*&#10004;*
 |[green]*&#10004;* (WS-Federation)
 
@@ -1619,6 +1735,7 @@ functionality already available in Maven 2.1.0
 |[green]*&#10004;* +
 Centrally-controlled encrypted password policy so admins do not have to rely on clients security policy. Auto-generated encrypted passwords can be used in your settings.xml or with non Maven REST clients, such as Ivy, Gradle etc. +
 Overcomes Maven drawbacks (including Maven 2.1+) - Maven decrypts the password to clear-text on the client, and keeps a clear-text master password on the filesystem
+|[green]*&#10004;*
 |[green]*&#10004;* +
 Via the http://blog.sonatype.com/2012/08/securing-repository-credentials-with-nexus-pro-user-tokens[User Token] feature. The token is a random api key and is not reversible to your corporate password, even by Nexus administrators. This was co-developed with a stock market that needed higher security than was is available elsewhere
 |*?*
@@ -1631,6 +1748,8 @@ functionality already available in Maven 2.1.0
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Full encryption of passwords in configuration files
+|[green]*&#10004;* +
+Full encryption of passwords in configuration files
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;* +
@@ -1641,18 +1760,20 @@ Encrypted user passwords
 |UI for GPG key management
 |*?*
 |[green]*&#10004;*
+|[red]*&#10008;*
 |*?*
 |*?*
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 
-8+|*Client features*
+9+|*Client features*
 
 |Client settings generation (settings.xml etc.)
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Out of the box generation of downloadable from the UI Maven's settings.xml, Ivy's settings.xml and Gradle's initial build script
+|[red]*&#10008;*
 |[green]*&#10004;* +
 with template management
 |*?*
@@ -1669,6 +1790,7 @@ provided in automatic help pages for: +
 |[red]*&#10008;*
 |[green]*&#10004;* +
 "Set Me Up" screens with detailed instructions, copy-paste configuration snippets and downloadble configuration files for any repository type.
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Maven settings can be templatized and provisioned using Nexus Maven plugin (Pro)
 |*?*
@@ -1684,6 +1806,7 @@ All client plugins allow generation of build BOM on any CI server (inc. cloud-ba
 - Artifactory Gradle Plugin (with custom DSL) +
 - Artifactory Maven Plugin +
 - Artifactory MsBuild Plugin (works with and without NuGet dependency management)
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Nexus Maven Plugin
 |*?*
@@ -1701,14 +1824,16 @@ https://github.com/JFrogDev/artifactory-cli-go[Artifactory CLI client]
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
-8+|*CI Integration*
+9+|*CI Integration*
 
 |Multiple CI servers support
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Supports Jenkins/Hudson, TeamCity and Bamboo with full UI integration and any other CI server (inc. cloud-based and non-pluggable ones) by using Maven/Gradle plugins. +
 Supports Microsoft Team Foundation Server (TFS) for working with .NET builds with and without NuGet
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;* +
@@ -1721,6 +1846,7 @@ Can show build information/links for Hudson and Jenkins
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Captures all build environment vars and system properties + CI-server specific vars (build, parent build, agent details etc.)
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[green]*&#10004;* +
@@ -1737,11 +1863,13 @@ Captures all published artifacts and effective build dependencies (after final v
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Bi-directional links from/to CI sevrer
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Can link from any build to its captured build info in Artifactory and from any artifact to the builds it is associated with in the CI server
+|[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
@@ -1757,11 +1885,13 @@ Can promote CI builds to target repositories with selective scopes (e.g. promote
 |[red]*&#10008;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 
 |Optimized Deployment
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Deploys all artifacts in one go only at the end of a successful build (Maven deploys partial modules for a broken multi-module build)
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Custom deploy plugin works with Staging to stage locally and deploy/promote at the end of the build
 |*?*
@@ -1770,7 +1900,7 @@ Can deploy zipped P2 repository with server side expansion
 |[green]*&#10004;*
 |[red]*&#10008;*
 
-8+|*Database*
+9+|*Database*
 
 |Supported DBMS
 a|- Apache Derby (default) +
@@ -1781,6 +1911,7 @@ a|- Bundled with Apache Derby +
 - PostgreSQL +
 - Oracle +
 - MS SQL Server
+|[red]*&#10008;*
 |Bundled with H2 and non-replaceable
 |*?*
 |[red]*&#10008;*
@@ -1792,6 +1923,7 @@ a|- Bundled with Apache Derby +
 configurable by datasources. Lucene index and REST api provided for searching
 |[green]*&#10004;* +
 Can be queried, but can also use REST API
+|[red]*&#10008;*
 |n/a - Lucene index and REST api provided for searching
 |*?*
 |[red]*&#10008;*
@@ -1803,6 +1935,7 @@ Can be queried, but can also use REST API
 Use by default an embedded Derby DB
 |[green]*&#10004;* +
 Can use file-system storage. Database usage is recommended for fully transactional behavior of metadata not extractable from the artifact file itself
+|[green]*&#10004;*
 |[green]*&#10004;* +
 Uses H2 for metadata, not for artifacts
 |*?*
@@ -1814,6 +1947,7 @@ Uses H2 for metadata, not for artifacts
 a|- available docs: http://archiva.apache.org/[site], http://cwiki.apache.org/confluence/display/ARCHIVA/[wiki]
 a|-  available doc: http://www.jfrog.com/[site], http://www.jfrog.com/confluence/display/RTF/Artifactory+User+Guide[User Guide] +
 Live browsable and searchable http://repo.jfrog.org/artifactory/webapp/home.html[demo]
+a|- available docs: https://www.cloudrepo.io/[site]
 a|-  available docs: http://nexus.sonatype.org/[site], +
 - live http://repository.sonatype.org/[instance] that includes searchable Central repository
 a|- available docs: http://books.sonatype.com/nexus-book/3.0/reference/index.html[Online Book], http://books.sonatype.com/nexus-book/3.0/pdf/nxbook-pdf.pdf[PDF]
@@ -1828,17 +1962,19 @@ a|-  available docs: http://www.myget.org/[site], http://docs.myget.org[docs], h
 |[green]*&#10004;*
 |[red]*&#10008;*
 |[red]*&#10008;*
+|[red]*&#10008;*
 |*?*
 |[green]*&#10004;*
 |[green]*&#10004;*
 
-8+|*Repository Purge*
+9+|*Repository Purge*
 
 |Snapshot Purge
 |[green]*&#10004;* +
 configurable by: retention count, # of days old and if released snapshots are to be deleted
 |[green]*&#10004;* +
 configurable by retention count
+|[red]*&#10008;*
 |[green]*&#10004;* +
 configurable by: retention count, # of days old and if released snapshots are to be deleted
 |*?*
@@ -1853,6 +1989,7 @@ configurable by retention count, etc
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Can evict unused artifacts from the proxy cache to conserve disk space
+|[red]*&#10008;*
 |[green]*&#10004;* +
 Can evict unused artifacts from the proxy cache to conserve disk space
 |*?*
@@ -1864,6 +2001,7 @@ Can evict unused artifacts from the proxy cache to conserve disk space
 |[red]*&#10008;*
 |[green]*&#10004;* +
 Select multiple artifacts across directories, by version and clean them all up in one go, or select any section of the repository tree to delete
+|[red]*&#10008;*
 |[green]*&#10004;* +
 You can select any section of the repository tree to delete, just like you would do on a file system
 |*?*
@@ -1878,6 +2016,7 @@ XMLRPC support in 1.2 +
 (REST in 1.4-M1)
 |[green]*&#10004;* +
 http://www.jfrog.com/confluence/display/RTF/Artifactory+REST+API[REST API]
+|[green]*&#10004;*
 |[green]*&#10004;* +
 - full support: The Ajax communicates with the server via REST so all operations are available for Web service integration
 |*?*
@@ -1917,19 +2056,23 @@ a|- http://www.jfrog.com/confluence/display/RTF/Build+Integration[Build Integrat
 - http://www.jfrog.com/home/v_artifactorypro_features#sso[Pluggable HTTP SSO] (Pro) - Reuse exiting SSO infrastructures, such as Apache mod_ntlm, mod_kerberos, etc.
 - http://www.jfrog.com/home/v_artifactorypro_features#webstart[Web Start/Jar Signing] (Pro) to sign jars upon request and deploy, host and serve dynamic modular Web Start applications.
 - Pluggable security realms
+|[red]*&#10008;*
 |http://books.sonatype.com/nexus-book/reference/community.html[Full list here]
 |*?*
 |*?*
 |[green]*&#10004;*
 |[green]*&#10004;*
 
-8+|*Commercial Support*
+9+|*Commercial Support*
 
 |Cost +
 [small]#Each CI server agent and build tool considered a "user"#
 |[red]*&#10008;*
 |[green]*&#10004;* +
 US$2,750 per server for unlimited users on unlimited hardware with https://www.jfrog.com/registration/quoteaddons.html[Artifactory Pro]
+|[green]*&#10004;* +
+- US$19 per month for unlimited users and repositories +
+- https://www.cloudrepo.io/pricing.html[Detailed Pricing]
 |[green]*&#10004;* +
 - US$1,200 for 10 users included with Nexus Pro +
  +
@@ -1947,6 +2090,7 @@ US$895 per server for unlimited users on unlimited hardware
 |Trial period for commercial versions
 |*?*
 |30 days. Extensions available on request
+|https://www.cloudrepo.io/sign-up.html[14 days]. Extensions available on request
 |14 days automatically. Extensions available on request
 |*?*
 |*?*
@@ -1956,6 +2100,7 @@ US$895 per server for unlimited users on unlimited hardware
 |Support terms and SLA
 |[red]*&#10008;*
 |24/7 with 4 hours acknowledgement time
+|[green]*&#10004;*
 |24/7 available
 |*?*
 |[red]*&#10008;*
