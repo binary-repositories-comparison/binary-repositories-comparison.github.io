@@ -1,0 +1,51 @@
+{{ "<!-- Footer -->" | safeHTML }}
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>{{ with .Site.Params.footer.location.title }}{{.}}{{ end }}</h3>
+
+                    {{ with .Site.Params.footer.location.address }}
+                        <p>
+                            {{ range $i, $e := $.Site.Params.footer.location.address }}
+                                {{ if $i }}<br>{{ end }}
+                                {{ $e }}
+                            {{ end }}
+                        </p>
+                    {{ end }}
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>{{ with .Site.Params.footer.social.title }}{{.}}{{ end }}</h3>
+                    <ul class="list-inline">
+                        {{ range .Site.Params.footer.social.networks }}
+                            <li>
+                                <a href="{{ .link }}" class="btn-social btn-outline"><i class="fa fa-fw {{ .icon }}"></i></a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>{{ with .Site.Params.footer.credits.title }}{{.}}{{ end }}</h3>
+                    <p>{{ with .Site.Params.footer.credits.text }}{{ . | markdownify }}{{ end }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{{ "<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->" | safeHTML }}
+<div class="scroll-top page-scroll visible-xs visible-sm">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>

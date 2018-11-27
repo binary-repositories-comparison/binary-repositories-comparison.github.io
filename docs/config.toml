@@ -1,0 +1,53 @@
+# Site settings
+baseurl = "https://binary-repositories-comparison.github.io/"
+languageCode = "en-us"
+title = "Binary Repository Manager Feature Matrix"
+theme = "hugo-freelancer-theme"
+
+
+[params]
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "binary-repositories-comparison"
+    description = "Binary Repository Manager Feature Matrix"
+
+    # Custom assets
+	custom_css = []
+	custom_js  = []
+
+    [params.navigation]
+        brand = "Binary Repository Manager Feature Matrix"
+
+    [params.header]
+        image = "logo.png"
+        tagline = "The most complete, up-to-date and non-biased comparison of Binary Repository Managers"
+
+    [params.features]
+        title = "Features"
+
+    [params.about]
+        title = "About"
+        left = "This is the reincarnation of the (now dead) [Maven Repository Manager Feature Matrix](http://docs.codehaus.org/display/MAVENUSER/Maven+Repository+Manager+Feature+Matrix) and it picks up exactly where the old doc left it. The page is collaboratively updated by the community and vendors, making it the most complete, up-to-date and non-biased comparison of Binary Repository Managers."
+        right = "Help to improve this page by opening a new [issue](https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/issues/new) or create a [pull request](https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/compare)"
+
+        [params.about.button]
+            text = "Download theme"
+            link = "//github.com/digitalcraftsman/hugo-freelancer-theme/archive/master.zip"
+            icon = "download"
+
+    [params.github]
+        url = "https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io"
+
+
+    [params.footer]
+        copyright = "Published under the [CC0 1.0 Universal license](https://github.com/binary-repositories-comparison/binary-repositories-comparison.github.io/blob/master/LICENSE)"
+
+        [params.footer.update]
+            title = "Last update"
+            date = "2017-04-29 15:08:24 UTC"
+
+        [params.footer.social]
+            title = "Around the web"
+            [[params.footer.social.networks]]
+                icon = "fa-github"
+                link = "//github.com/binary-repositories-comparison/binary-repositories-comparison.github.io"
