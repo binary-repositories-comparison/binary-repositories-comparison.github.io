@@ -23,8 +23,8 @@ deploy:
   provider: pages
   skip_cleanup: true
   local-dir: docs/public
-  github_token: $GITHUB_TOKEN
-  email: $EMAIL
+  github_token: $GH_TOKEN
+  email: $GIT_EMAIL
   on:
     branch: master
 
