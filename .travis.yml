@@ -32,5 +32,6 @@ notifications:
   email:
     recipients:
       - leons@jfrog.com
+      - baruchs@jfrog.com
     on_success: always
     on_failure: always
